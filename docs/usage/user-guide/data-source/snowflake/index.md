@@ -18,9 +18,3 @@ Synmetrix allows you to create data sources for your machine learning projects. 
 4. Provide the necessary information, including the source type, connection details, and data format.
 
 5. Save the data source configuration.
-
-
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
