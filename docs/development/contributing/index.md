@@ -1,7 +1,7 @@
 ---
 id: contributing
 title: Contributing to Synmetrix
-slug: /production-development/contributing
+slug: /development/contributing
 sidebar_label: Contributing
 ---
 

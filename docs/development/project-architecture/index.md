@@ -1,7 +1,7 @@
 ---
 id: project-architecture
 title: Synmetrix Project Architecture
-slug: /production-development/project-architecture
+slug: /development/project-architecture
 sidebar_label: Project Architecture
 ---
 

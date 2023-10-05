@@ -3,6 +3,7 @@ id: links-and-contacts
 title: Links and Contacts
 slug: /links-and-contacts
 sidebar_label: Links and Contacts
+sidebar_position: 12
 ---
 
 ## Useful Links and Contacts

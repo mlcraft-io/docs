@@ -1,7 +1,7 @@
 ---
 id: local-development
 title: Local Development
-slug: /production-development/local-development
+slug: /development/local-development
 sidebar_label: Local Development
 ---
 

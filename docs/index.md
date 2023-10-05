@@ -1,10 +1,12 @@
 ---
 id: quickstart-page
 title: Quick Start
-slug: /intro/quickstart
+slug: /quickstart
 sidebar_label: Quick Start
-sidebar_position: 2
+sidebar_position: 1
 ---
+
+![Quick Start](/docs/data/start.png)
 
 ### Prerequisites
 

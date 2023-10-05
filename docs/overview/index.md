@@ -3,6 +3,7 @@ id: overview
 title: Overview
 slug: /overview
 sidebar_label: Overview
+sidebar_position: 2
 ---
 
 This document provides information about the functional characteristics of "Synmetrix" software (hereinafter referred to as the software or application) and the necessary details for its operation. This includes information about the software's technological stack, its purpose, and more.
