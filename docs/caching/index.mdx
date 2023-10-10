@@ -1,0 +1,201 @@
+---
+id: caching
+title: Caching
+sidebar_label: Caching
+slug: /caching
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Overview
+
+Synmetrix offers a robust caching system with two distinct layers to optimize query performance and minimize database load. This system enhances the efficiency of data retrieval and processing. The primary caching layer is an in-memory cache, which is active by default. The second layer is called "pre-aggregations" and requires explicit configuration to activate.
+
+## In-Memory Cache
+
+Synmetrix's in-memory cache serves as a temporary buffer for your database. It becomes especially valuable when multiple concurrent users request the same data simultaneously. While pre-aggregations are designed to strike a balance between query response time and performance, the in-memory cache helps smooth out spikes in data demand.
+
+In development mode, you can reset the in-memory cache by simply restarting the server.
+
+**Note**: It's generally not recommended to modify the default in-memory caching configuration unless it's absolutely necessary. To improve query performance, consider utilizing pre-aggregations.
+
+## Pre-Aggregations
+
+Pre-aggregations introduce an additional layer of aggregated data, constructed and updated by Synmetrix. They can significantly enhance query performance and concurrency.
+
+To create pre-aggregations, Synmetrix might require write access to the pre-aggregations schema within the source database. In this scenario, Synmetrix initially builds pre-aggregations as tables in the source database and then exports them to the pre-aggregations storage. Refer to your specific driver's documentation for details on read-only support and pre-aggregation build strategies.
+
+Pre-aggregations are defined within the data model. You can learn more about defining pre-aggregations in the data modeling reference.
+
+<Tabs
+  groupId="download-method"
+  defaultValue="yaml"
+  values={[
+    { label: 'Using YAML', value: 'yaml' },
+    { label: 'Using JavaScript', value: 'javascript' },
+  ]}
+>
+  <TabItem value="yaml" label="YAML">
+   
+    ```yaml
+
+        cubes:
+          - name: orders
+            sql_table: orders
+
+            measures:
+              - name: total_amount
+                sql: amount
+                type: sum
+
+            dimensions:
+              - name: created_at
+                sql: created_at
+                type: time
+
+            pre_aggregations:
+              - name: amount_by_created
+                measures:
+                  - total_amount
+                time_dimension: created_at
+                granularity: month
+
+      ```
+
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    
+    ```javascript
+
+    cube(`orders`, {
+      sql_table: `orders`,
+      measures: {
+        total_amount: {
+          sql: `amount`,
+          type: `sum`,
+        },
+      },
+      dimensions: {
+        created_at: {
+          sql: `created_at`,
+          type: `time`,
+        },
+      }, 
+      pre_aggregations: {
+        amount_by_created: {
+          measures: [total_amount],
+          time_dimension: created_at,
+          granularity: `month`,
+        },
+      },
+
+    ```
+
+  </TabItem>
+</Tabs>
+
+
+### In-Memory Cache Operation
+
+Synmetrix utilizes an in-memory cache to store the results of executed queries. The cache key is generated from the SQL statement, including any existing pre-aggregations that the query depends on.
+
+Upon receiving an incoming request, Synmetrix first checks the cache using this key. If no match is found in the cache, the query is executed in the database. The result set is returned and simultaneously updates the cache.
+
+If a cached value exists, and the `refresh_key` value for the query remains unchanged, the cached value is returned. Otherwise, an SQL query is executed either against the pre-aggregations storage or the source database to refresh the cache and retrieve the updated results.
+
+### Refresh Keys
+
+To avoid unnecessary database queries, Synmetrix defines a `refresh_key` for each cube. These refresh keys are evaluated to determine if data needs to be refreshed.
+
+Here's an example of a `refresh_key` that instructs Synmetrix to refresh data every 5 minutes:
+
+
+**YAML**
+
+```yaml
+cubes:
+  - name: orders
+    # ...
+
+    refresh_key:
+      every: 5 minutes
+```
+
+**JavaScript**
+
+```javascript
+cube(`orders`, {
+  refresh_key: {
+    every: `5 minute`,
+  },
+});
+```
+
+Alternatively, the following `refresh_key` only refreshes data when the value of `MAX(created_at)` changes. By default, Synmetrix checks this refresh key every 10 seconds:
+
+**YAML**
+
+```yaml
+cubes:
+  - name: orders
+    # ...
+
+    refresh_key:
+      sql: SELECT MAX(created_at) FROM orders
+```
+
+**JavaScript**
+```javascript
+cube(`orders`, {
+  // ...
+ 
+  refresh_key: {
+    sql: `SELECT MAX(created_at) FROM orders`,
+  },
+});
+```
+
+### Default Refresh Keys
+
+
+By default, in development mode, Synmetrix will check and invalidate the cache in the background. For production environments, it's recommended to run a Refresh Worker as a separate instance.
+
+We strongly recommend enabling background cache invalidation using a separate Synmetrix worker for production deployments. Please consult the Production Checklist for more information. If background refresh is disabled, Synmetrix will refresh the cache during query execution. To ensure optimal response times for end-users, it's advisable to always enable background refresh.
+
+This information provides an overview of Synmetrix's caching layers and how they operate to optimize query performance and data consistency. For more detailed guidance and configuration options, refer to the Synmetrix documentation.
+
+# Disabling the Cache
+
+Unfortunately, there is no direct way to disable caching in Synmetrix. This is due to the fact that Synmetrix employs caching not only for storing cached values but also for synchronization and coordination among nodes in a cluster. In the design philosophy of Synmetrix, client invocations are indistinguishable, and all calls to the data load API are idempotent. While this approach offers robust reliability and scalability, it does come with certain trade-offs. Specifically, it is impossible to trace a load data call back to a specific client, making it challenging for a client to initiate a fresh data loading query or determine if a prior invocation was initiated by another client. In such cases, the only assurance provided is the freshness of the Refresh Key.
+
+For scenarios where real-time analytics or immediate response to live user updates to the underlying data is crucial, the refresh_key query cache can appear to hinder the immediate availability of fresh data. To effectively disable the cache for such situations, you can set the `refresh_key.every` parameter to a very low value, such as 1 second.
+
+## Inspecting Queries
+
+To gain insights into whether a query interacts with the in-memory cache, pre-aggregations, or the underlying data source, you can utilize the Synmetrix Playground or Synmetrix Cloud.
+
+### Using the Synmetrix Playground
+
+The Synmetrix Playground enables the inspection of individual queries. To achieve this, execute the query and then click the "cache" button. This action will provide you with information about the refresh_key for the query and indicate whether the query utilizes any pre-aggregations.
+
+### Using Synmetrix Cloud
+
+For a more comprehensive inspection of queries, including multiple queries or an overview of existing pre-aggregations, Synmetrix Cloud is your tool of choice.
+
+#### Query Inspection
+
+Navigate to the "History" page within Synmetrix Cloud. On this page, you can filter queries based on various parameters, such as cache hits, pre-aggregations, or raw data. Furthermore, clicking on a specific query will reveal details such as the time spent in the database, the size of the database queue at the time of query execution, the generated SQL, a query timeline, and more. Additionally, you will receive recommendations for optimal pre-aggregations that could be applied to enhance query performance.
+
+#### Pre-Aggregations Overview
+
+To review existing pre-aggregations, head to the "Pre-Aggregations" page in Synmetrix Cloud. This table provides a comprehensive view of all pre-aggregations, including their last refresh timestamp and the time taken to build each pre-aggregation. Furthermore, you can delve into the details of each pre-aggregation, including the list of queries it serves and all its versions.
+
+This information should assist you in managing caching and gaining insights into how your data is processed and queried within Synmetrix.
+
+:::note
+For specific instructions and details regarding Synmetrix, consult the Synmetrix documentation and resources available on the Synmetrix website.
+:::
+
+:::info
+To stay up-to-date with Synmetrix and its features, consider subscribing to the Synmetrix newsletter or checking the Synmetrix blog for the latest updates and tips.
+:::

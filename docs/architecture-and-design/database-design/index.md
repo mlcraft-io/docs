@@ -7,7 +7,7 @@ slug: /architecture-and-design/database-design
 
 ## Database Structure
 
-The "MLCRAFT" database is organized according to the relational database model and includes the following tables:
+The "Synmetrix" database is organized according to the relational database model and includes the following tables:
 
 1. **public.users**: Stores information about registered users, including user ID (id), display name (display_name), avatar URL (avatar_url), as well as the creation time and last update time of the record.
 
@@ -47,12 +47,12 @@ The "MLCRAFT" database is organized according to the relational database model a
 
 ![Database Architecture Description](/docs/data/db.png)
 
-The architecture of the database, including relationships between tables, primary and foreign keys, and indexes, is represented in the Database Markup Language (DBML). Please refer to [Appendix G](#appendix-g) for the complete DBML representation.
+The architecture of the database, including relationships between tables, primary and foreign keys, and indexes, is represented in the [Database Markup Language (DBML).](https://github.com/mlcraft-io/mlcraft/blob/main/docs/database/mlcraft.dblm)
 
 This database structure provides flexibility and scalability to the system, allowing convenient management of users, teams, data sources, reports, and other system elements. Each database table is designed for a specific purpose and can be extended or modified to meet evolving system requirements.
 
 
 :::note
-For the complete DBML representation of the database architecture, please refer to [Appendix G](#appendix-g).
+For the complete DBML representation of the database architecture, please refer to [Database Markup Language (DBML)](https://github.com/mlcraft-io/mlcraft/blob/main/docs/database/mlcraft.dblm).
 :::
 

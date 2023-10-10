@@ -5,17 +5,50 @@ slug: /usage/installation-and-setup
 sidebar_label: Installation and Setup
 ---
 
-
 ## Installation and Setup
 
-To get started with Synmetrix, follow these steps:
+Welcome to Synmetrix! This guide will walk you through the installation and setup process to get you up and running with Synmetrix, our powerful data analytics platform.
 
-1. **Clone the Repository**: Clone the Synmetrix repository from [https://github.com/synmetrix-io/synmetrix](https://github.com/synmetrix-io/synmetrix).
+### Step 1: Clone the Repository
 
-2. **Install Dependencies**: Install the required dependencies and packages specified in the project's documentation.
+Start by cloning the Synmetrix repository from GitHub:
 
-3. **Configuration**: Configure Synmetrix by specifying settings, credentials, and other configurations as needed. Refer to the project documentation for detailed instructions.
+```bash
+git clone https://github.com/synmetrix-io/synmetrix.git
+```
 
-4. **Start the Server**: Start the Synmetrix server by running the appropriate command. Again, consult the documentation for the exact command.
+This will create a local copy of the Synmetrix source code on your machine.
 
-5. **Access the Web Interface**: Once the server is running, access the Synmetrix web interface through your web browser.
+### Step 2: Install Dependencies
+
+Synmetrix relies on several dependencies and packages to function properly. It's essential to install these dependencies to ensure a smooth installation process.
+
+- [Docker](https://docs.docker.com/install)
+- [Docker Compose](https://docs.docker.com/compose/install)
+- [Python3](https://www.python.org/downloads/) (with [pip3](https://pip.pypa.io/en/stable/installing/))
+- [Node.js 8.9+](https://nodejs.org/en/download/) with [Yarn](https://classic.yarnpkg.com/en/docs/install) installed
+
+### Step 3: Configuration
+
+Now that you have the repository and dependencies in place, it's time to configure Synmetrix. Configuration involves specifying settings, credentials, and other parameters to tailor Synmetrix to your needs. The exact configuration steps may vary based on your use case, so consult our [Configuration Documentation](https://docs.synmetrix.io/configuration) for detailed guidance.
+
+### Step 4: Start the Server
+
+With the repository cloned, dependencies installed, and configuration set, you're ready to start the Synmetrix server. The server is the heart of the platform, responsible for data processing and analytics. The exact command to start the server can be found in our [Server Startup Guide](https://docs.synmetrix.io/installation/server-startup).
+
+### Step 5: Access the Web Interface
+
+Once the Synmetrix server is up and running, you can access the web interface through your preferred web browser. Open your browser and navigate to the following URL:
+
+```text
+http://localhost:8080
+```
+
+This will take you to the Synmetrix web interface, where you can interact with the platform, create data analytics pipelines, and explore your data.
+
+:::Congratulations!
+You've successfully installed and set up Synmetrix. Now you can unleash the power of data analytics and gain valuable insights from your datasets.
+:::
+
+
+If you need assistance or want to schedule a 20-minute call with our team to help you get set up, please select a time directly [here](https://calendly.com/mlcraft-io/video-meeting).

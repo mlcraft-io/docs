@@ -8,7 +8,7 @@ sidebar_label: Druid
 
 ## Step 1: Navigate to the Druid example directory
 
-Navigate to the Druid example directory located at `/docs/examples/druid` in the root of the MLCraft project. You can also download this directory from the GitHub repository. To navigate to the directory, run the following command:
+Navigate to the Druid example directory located at `/docs/examples/druid` in the root of the Synmetrix project. You can also download this directory from the GitHub repository. To navigate to the directory, run the following command:
 
 ```bash
 cd ./docs/examples/druid
@@ -55,7 +55,7 @@ When the data starts loading, you will be redirected to the Ingestion tab and se
 
 After the data has finished loading, the task status will change to SUCCESS.
 
-## Step 5: Create a new Druid datasource in MLCraft
+## Step 5: Create a new Druid datasource in Synmetrix
 
 Fill out the form with the following information:
 

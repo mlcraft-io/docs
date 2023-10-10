@@ -3,11 +3,8 @@ id: contributing
 title: Contributing to Synmetrix
 slug: /development/contributing
 sidebar_label: Contributing
+sidebar_position: 2
 ---
-
-
-
-## Introduction
 
 This guide provides information on how to contribute to Synmetrix, including code changes, helping other users, documentation updates, bug reports, bug fixes, new feature proposals, and coding standards.
 

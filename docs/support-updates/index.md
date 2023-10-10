@@ -40,4 +40,3 @@ To stay informed about upcoming updates, new features, and important announcemen
 
 - **Join our Community Forum**:Connect with us on [Slack](https://join.slack.com/t/mlcraft/shared_invite/zt-1x2gxwn37-J3tTvCR5xSFVfxwUU_YKtg) and [Docker](https://hub.docker.com/u/mlcraft) for real-time updates and news.[Community Forum](https://github.com/mlcraft-io/mlcraft)
 
-Thank you for choosing Synmetrix for your machine learning operations. We appreciate your support and look forward to providing you with exceptional service and innovative features.

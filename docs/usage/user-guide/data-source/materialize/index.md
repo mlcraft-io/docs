@@ -10,7 +10,7 @@ Tested on the [materialize/materialized:latest](https://hub.docker.com/r/materia
 
 ## Step 1: Navigate to the Materialize example directory
 
-Navigate to the Materialize example directory located at `/docs/examples/materialize` in the root of the MLCraft project. You can also download this directory from the GitHub repository. To navigate to the directory, run the following command:
+Navigate to the Materialize example directory located at `/docs/examples/materialize` in the root of the Synmetrix project. You can also download this directory from the GitHub repository. To navigate to the directory, run the following command:
 
 ```bash
 cd ./docs/examples/materialize
@@ -32,9 +32,9 @@ Then, start the Materialize service by running the script:
 
 After the script has finished running, it will return the host IP address of your machine. Take note of this IP address for the next step.
 
-## Step 3: Add a data source in the mlcraft UI
+## Step 3: Add a data source in the Synmetrix UI
 
-Go to the mlcraft UI and add a new data source with the following parameters:
+Go to the Synmetrix UI and add a new data source with the following parameters:
 
 - Host: Host IP (obtained from the script in Step 2)
 - Port: 6875
@@ -43,4 +43,4 @@ Go to the mlcraft UI and add a new data source with the following parameters:
 
 ## Step 4: Test the connection
 
-Click the "Check connection" button in the mlcraft UI to verify the connection to the Materialize data source. If the connection is successful, you will see a confirmation message.
+Click the "Check connection" button in the Synmetrix UI to verify the connection to the Materialize data source. If the connection is successful, you will see a confirmation message.

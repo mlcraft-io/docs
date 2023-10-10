@@ -7,7 +7,7 @@ sidebar_label: Elasticsearch
 
 ## Step 1: Navigate to the Elasticsearch Example Directory
 
-Navigate to the Elasticsearch example directory located at `/docs/examples/elasticsearch` in the root of the MLCraft project. You can also download this directory from the GitHub repository. To navigate to the directory, run the following command:
+Navigate to the Elasticsearch example directory located at `/docs/examples/elasticsearch` in the root of the Synmetrix project. You can also download this directory from the GitHub repository. To navigate to the directory, run the following command:
 
 ```bash
 cd ./docs/examples/elasticsearch
@@ -61,9 +61,9 @@ At the bottom of the page, click **Other sample data sets**:
 
 Choose a dataset and click **Add data**.
 
-## Step 5: Create a Datasource in MLCraft
+## Step 5: Create a Datasource in Synmetrix
 
-Now you can create a datasource in MLCraft using the following information:
+Now you can create a datasource in Synmetrix using the following information:
 
 ```
 Name: Elasticsearch test datasource

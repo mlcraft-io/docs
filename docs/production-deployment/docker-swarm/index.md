@@ -26,7 +26,11 @@ DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 python3 cli.py --env stage servic
 DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 python3 cli.py --env stage services up mlcraft_bi
 ```
 
-NOTE: default docker registry url is `index.docker.io`
+:::note
+
+default docker registry url is `index.docker.io`
+
+:::
 
 Then run migrations:
 

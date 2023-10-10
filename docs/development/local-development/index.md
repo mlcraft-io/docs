@@ -3,21 +3,23 @@ id: local-development
 title: Local Development
 slug: /development/local-development
 sidebar_label: Local Development
+sidebar_position: 1
 ---
 
 
 ## Prerequisites
 
-Before you can begin local development for MLcraft, make sure you have the following prerequisites installed:
+Before you can begin local development for Synmetrix, make sure you have the following prerequisites installed:
 
-- Docker
-- Docker-compose
-- Python3 (with pip3)
-- Node.js 8.9+ with `yarn` installed
+
+- [Docker](https://docs.docker.com/install)
+- [Docker Compose](https://docs.docker.com/compose/install)
+- [Python3](https://www.python.org/downloads/) (with [pip3](https://pip.pypa.io/en/stable/installing/))
+- [Node.js 8.9+](https://nodejs.org/en/download/) with [Yarn](https://classic.yarnpkg.com/en/docs/install) installed
 
 ## Getting Started
 
-1. Clone the MLcraft repository:
+1. Clone the Synmetrix repository:
 
    ```bash
    git clone https://github.com/mlcraft-io/mlcraft.git
@@ -59,3 +61,5 @@ For additional command-line options and information, you can check the available
 ```bash
 python3 cli.py --help
 ```
+
+You also need to know a [Synmetrix System Architecture](/architecture-and-design/system-architecture)
