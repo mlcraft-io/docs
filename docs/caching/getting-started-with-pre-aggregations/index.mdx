@@ -21,25 +21,25 @@ analytical datasets; data warehousing solutions _usually_ make no guarantees
 except to deliver a response, which means latency can vary wildly on a
 query-to-query basis.
 
-    | Database Type                  | Low Latency? | Massive Datasets? |
-    | ------------------------------ | ------------ | ----------------- |
-    | Application (Postgres/MySQL)   | ✅            | ❌                 |
-    | Analytical (BigQuery/Redshift) | ❌            | ✅                 |
+| Database Type                  | Low Latency? | Massive Datasets? |
+| ------------------------------ | ------------ | ----------------- |
+| Application (Postgres/MySQL)   | ✅            | ❌                 |
+| Analytical (BigQuery/Redshift) | ❌            | ✅                 |
 
 
-    Cube provides a solution to this problem: pre-aggregations. In layman's terms, a
-    pre-aggregation is a condensed version of the source data. It specifies
-    attributes from the source, which Cube uses to condense (or crunch) the data.
-    This simple yet powerful optimization can reduce the size of the dataset by
-    several orders of magnitude, and ensures subsequent queries can be served by the
-    same condensed dataset if any matching attributes are found.
+Cube provides a solution to this problem: pre-aggregations. In layman's terms, a
+pre-aggregation is a condensed version of the source data. It specifies
+ttributes from the source, which Cube uses to condense (or crunch) the data.
+This simple yet powerful optimization can reduce the size of the dataset by
+several orders of magnitude, and ensures subsequent queries can be served by the
+same condensed dataset if any matching attributes are found.
 
-    [Pre-aggregations are defined within each cube's data
-    schema][ref-schema-preaggs], and cubes can have as many pre-aggregations as they
-    require. The pre-aggregated data [can be stored either alongside the source data
-    in the same database, in an external database][ref-caching-preaggs-storage] that
-    is supported by Cube, [or in Cube Store, a dedicated pre-aggregation storage
-    layer][ref-caching-preaggs-cubestore].
+[Pre-aggregations are defined within each cube's data
+schema][ref-schema-preaggs], and cubes can have as many pre-aggregations as they
+require. The pre-aggregated data [can be stored either alongside the source data
+in the same database, in an external database][ref-caching-preaggs-storage] that
+is supported by Cube, [or in Cube Store, a dedicated pre-aggregation storage
+layer][ref-caching-preaggs-cubestore].
 
 ## Pre-Aggregations without Time Dimension
 
@@ -48,7 +48,7 @@ database. We have a data model representing all our `orders`:
 
 Some sample data from this table might look like:
 
-```markdown
+
 | **id** | **status** | **completed_at**        |
 | ------ | ---------- | ----------------------- |
 | 1      | completed  | 2021-02-15T12:21:11.290 |
@@ -56,7 +56,7 @@ Some sample data from this table might look like:
 | 3      | shipped    | 2021-03-15T20:40:57.404 |
 | 4      | processing | 2021-03-13T10:30:21.360 |
 | 5      | completed  | 2021-03-10T18:25:32.109 |
-```
+
 
 Our first requirement is to populate a dropdown in our front-end application
 which shows all possible statuses. The Cube query to retrieve this information
