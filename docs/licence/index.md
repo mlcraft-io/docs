@@ -3,7 +3,7 @@ id: license
 title: License
 slug: /license
 sidebar_label: License
-sidebar_position: 9
+sidebar_position: 14
 ---
 
 

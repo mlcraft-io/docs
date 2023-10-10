@@ -21,23 +21,12 @@ analytical datasets; data warehousing solutions _usually_ make no guarantees
 except to deliver a response, which means latency can vary wildly on a
 query-to-query basis.
 
-<Tabs
-defaultValue="database-comparison"
-groupId="database-type"
-values={[
-{ label: 'Application (Postgres/MySQL)', value: 'application' },
-{ label: 'Analytical (BigQuery/Redshift)', value: 'analytical' },
-]}
-
->   <TabItem value="application">
-
     | Database Type                  | Low Latency? | Massive Datasets? |
     | ------------------------------ | ------------ | ----------------- |
     | Application (Postgres/MySQL)   | ✅            | ❌                 |
     | Analytical (BigQuery/Redshift) | ❌            | ✅                 |
 
-  </TabItem>
-  <TabItem value="analytical">
+
     Cube provides a solution to this problem: pre-aggregations. In layman's terms, a
     pre-aggregation is a condensed version of the source data. It specifies
     attributes from the source, which Cube uses to condense (or crunch) the data.
@@ -52,87 +41,12 @@ values={[
     is supported by Cube, [or in Cube Store, a dedicated pre-aggregation storage
     layer][ref-caching-preaggs-cubestore].
 
-  </TabItem>
-</Tabs>
-
 ## Pre-Aggregations without Time Dimension
 
 To illustrate pre-aggregations with an example, let's use a sample e-commerce
 database. We have a data model representing all our `orders`:
 
-<Tabs
-defaultValue="yaml"
-groupId="code-example"
-values={[
-{ label: 'YAML', value: 'yaml' },
-{ label: 'JavaScript', value: 'javascript' },
-]}
-
->   <TabItem value="yaml" markdown={true}>
-
-    ```yaml
-    cubes:
-      - name: orders
-        sql_table: orders
-
-        measures:
-          - name: count
-            type: count
-
-        dimensions:
-          - name: id
-            sql: id
-            type: number
-            primary_key: true
-
-          - name: status
-            sql: status
-            type: string
-
-          - name: completed_at
-            sql: completed_at
-            type: time
-
-    ```
-
-  </TabItem>
-  <TabItem value="javascript" markdown={true}>
-    ```javascript
-    cube(`orders`, {
-        sql_table: `orders`,
-
-            measures: {
-                count: {
-                type: `count`,
-                },
-            },
-
-            dimensions: {
-                id: {
-                sql: `id`,
-                type: `number`,
-                primary_key: true,
-                },
-
-                status: {
-                sql: `status`,
-                type: `string`,
-                },
-
-                completed_at: {
-                sql: `completed_at`,
-                type: `time`,
-                },
-        },
-    });
-    ```
-
-  </TabItem>
-</Tabs>
-
 Some sample data from this table might look like:
-
-<CodeTabs>
 
 ```markdown
 | **id** | **status** | **completed_at**        |
@@ -148,50 +62,3 @@ Our first requirement is to populate a dropdown in our front-end application
 which shows all possible statuses. The Cube query to retrieve this information
 might look something like:
 
-<CodeTabs>
-
-```json
-{
-  "dimensions": ["orders.status"]
-}
-```
-
-In that case, we can add the following pre-aggregation to the `orders` cube:
-
-<Tabs
-defaultValue="preaggregation-example"
-groupId="preaggregation-example"
-values={[
-{ label: 'YAML', value: 'yaml' },
-{ label: 'JavaScript', value: 'javascript' },
-]}
-
->   <TabItem value="yaml" markdown={true}>
-
-    ```yaml
-    cubes:
-      - name: orders
-        # ...
-
-        pre_aggregations:
-          - name: order_statuses
-            dimensions:
-              - status
-    ```
-
-  </TabItem>
-  <TabItem value="javascript" markdown={true}>
-    ```javascript
-    cube(`orders`, {
-      // ...
-
-      pre_aggregations: {
-        order_statuses: {
-          dimensions: [status],
-        },
-      },
-    });
-    ```
-
-  </TabItem>
-</Tabs>

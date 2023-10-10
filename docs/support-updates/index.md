@@ -3,7 +3,7 @@ id: support-updates
 title: Support & Updates
 slug: /support-updates
 sidebar_label: Support & Updates
-sidebar_position: 8
+sidebar_position: 12
 ---
 
 # Support and Updates

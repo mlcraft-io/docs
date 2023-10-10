@@ -1,7 +1,7 @@
 ---
 id: Requirements
 title: Requirements
-slug: /requirements
+slug: /production-deployment/requirements/
 sidebar_label: Requirements
 ---
 

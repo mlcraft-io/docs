@@ -3,6 +3,7 @@ id: sql-interface
 title: SQL Interface
 sidebar_label: SQL Interface
 slug: /sql-interface
+sidebar_position: 7
 ---
 
 # Synmetrix SQL Interface
