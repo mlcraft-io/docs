@@ -17,9 +17,6 @@ Synmetrix is intended for installation and use on servers equipped with processo
 - Network: Internet connectivity is required for cloud services and software updates.
 ```
 
-## Power Supply
-
-The PC should be powered from a single-phase alternating current (AC) electrical network with grounding and a nominal voltage of 220 V at a frequency of 50 Hz. It is recommended to use an uninterruptible power supply (UPS) for stable power delivery.
 
 :::note
 

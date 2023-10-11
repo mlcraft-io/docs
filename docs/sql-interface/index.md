@@ -140,10 +140,8 @@ The above query works because the CASE expression is supported in SELECT queries
 
 ## Server Code
 
-For a detailed analysis of the server code and its components, please refer to the [Synmetrix SQL Interface Server Code](https://github.com/synmetrix-io/synmetrix/blob/main/services/cubejs/index.js).
+For a detailed analysis of the server code and its components, please refer to the [Synmetrix SQL Interface Server Code](https://github.com/mlcraft-io/mlcraft/blob/main/services/cubejs/index.js).
 
 ## Conclusion
 
 The creation of the SQL interface in Synmetrix has allowed for the development of a unified data access interface, ensuring metric consistency for all data tools. This has reduced the number of discrepancies and conflicts related to metric calculations, providing a more reliable foundation for data-driven decision-making.
-
-For more in-depth information and detailed documentation, please visit the [Synmetrix Documentation](https://docs.synmetrix.org).

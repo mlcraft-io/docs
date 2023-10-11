@@ -14,7 +14,7 @@ Welcome to Synmetrix! This guide will walk you through the installation and setu
 Start by cloning the Synmetrix repository from GitHub:
 
 ```bash
-git clone https://github.com/synmetrix-io/synmetrix.git
+git clone https://github.com/mlcraft-io/mlcraft.git
 ```
 
 This will create a local copy of the Synmetrix source code on your machine.
@@ -30,7 +30,7 @@ Synmetrix relies on several dependencies and packages to function properly. It's
 
 ### Step 3: Configuration
 
-Now that you have the repository and dependencies in place, it's time to configure Synmetrix. Configuration involves specifying settings, credentials, and other parameters to tailor Synmetrix to your needs. The exact configuration steps may vary based on your use case, so consult our [Configuration Documentation](https://docs.synmetrix.io/configuration) for detailed guidance.
+Now that you have the repository and dependencies in place, it's time to configure Synmetrix. Configuration involves specifying settings, credentials, and other parameters to tailor Synmetrix to your needs. The exact configuration steps may vary based on your use case, so consult our [Local Development Guide](/docs/development/local-development/index.md) and [Quick Start Guide](docs/quickstart/index.mdx) for detailed info.
 
 ### Step 4: Start the Server
 
@@ -51,4 +51,4 @@ You've successfully installed and set up Synmetrix. Now you can unleash the powe
 :::
 
 
-If you need assistance or want to schedule a 20-minute call with our team to help you get set up, please select a time directly [here](https://calendly.com/mlcraft-io/video-meeting).
+If you need assistance or want to schedule a 30-minute call with our team to help you get set up, please select a time directly [here](https://cal.com/synmetrix/30min).

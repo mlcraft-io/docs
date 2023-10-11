@@ -32,39 +32,6 @@ Synmetrix's versatile features find applications across a wide range of sectors,
 ## Programming Language
 - JavaScript / Node.js
 
-## Program Size (Megabytes)
-- 8 MB
-
-## Main Platform Components
-
-The main functional components of the platform include:
-
-### [Datasources](/docs/usage/user-guide/Interface/datasources-page.md)
-
-This page provides a user-friendly interface for adding various data sources to the project. It offers a wide selection of possible databases, drivers, and other data storage solutions, providing flexibility in choosing the right option for your needs.
-
-### [Models](/docs/usage/user-guide/Interface/models-page.md)
-
-The Models page is a powerful tool for creating data schemas and managing them in the project. It allows you to define the structure and relationships of your data, ensuring consistency and integrity. Data schemas are generated using Cube.js, a powerful open-source API analytics platform. Additionally, this page offers functions for version control of schemas and executing SQL queries on linked data sources.
-
-### [Alerts](/docs/usage/user-guide/Interface/alerts-page.md)
-
-This section allows you to configure notifications based on predefined data conditions. When specified conditions are met, notifications are triggered, and you will be informed through your chosen notification method.
-
-### [Reports](/docs/usage/user-guide/Interface/reports-page.md)
-
-On the "Reports" page, you can track metrics with the desired frequency.
-
-### [Logs](/docs/usage/user-guide/Interface/logs-page.md)
-
-This section is designed to manage the internal operations of the Cube.js service. It allows you to view requests and events that occur during the processing of these events. You can access information such as execution time, start and end times, actual queries, and additional technical details. This capability enables performance tracking and analysis of Cube.js service behavior.
-
-### [Team](/docs/usage/user-guide/Interface/team-page.md)
-
-The "Team" page is used to create and manage teams within the project. It allows you to invite new users and assign roles and access levels to team members.
-
-This document provides an overview of the software's features and main platform components. For detailed usage instructions and technical information, refer to the accompanying documentation.
-
 ## How to Use This Documentation
 
 To make the most of this documentation, you can explore the following sections:
@@ -83,6 +50,6 @@ We welcome contributions from the community. If you'd like to get involved in th
 
 ## Contact Us
 
-If you have questions, feedback, or need assistance, don't hesitate to reach out to us. You can contact us through our [official website](https://synmetrix.io) or by visiting our [GitHub repository](https://github.com/synmetrix-io/synmetrix).
+If you have questions, feedback, or need assistance, don't hesitate to reach out to us. [Contact us](/docs/links-and-contacts/index.md). or by visiting our [GitHub repository](https://github.com/mlcraft-io/mlcraft).
 
 Synmetrix is meticulously designed to streamline your data management, analysis, and transmission workflows, making it the ultimate tool for all your data needs. We look forward to your involvement and contributions!
