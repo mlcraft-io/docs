@@ -34,7 +34,7 @@ Now that you have the repository and dependencies in place, it's time to configu
 
 ### Step 4: Start the Server
 
-With the repository cloned, dependencies installed, and configuration set, you're ready to start the Synmetrix server. The server is the heart of the platform, responsible for data processing and analytics. The exact command to start the server can be found in our [Server Startup Guide](https://docs.synmetrix.io/installation/server-startup).
+With the repository cloned, dependencies installed, and configuration set, you're ready to start the Synmetrix server. The server is the heart of the platform, responsible for data processing and analytics. The exact command to start the server can be found in our [Server Startup Guide](/docs/production-deployment/index.md).
 
 ### Step 5: Access the Web Interface
 

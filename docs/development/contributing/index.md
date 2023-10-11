@@ -12,7 +12,7 @@ Contributions to Synmetrix go beyond code development. Assisting new users, test
 
 ## Helping Other Users
 
-One of the most valuable ways to contribute to Synmetrix is by helping answer user questions on the [discussion forum](https://github.com/mlcraft-io/mlcraft/discussions) or in the [Slack channel](https://www.synmetrix.io/slack-invite.html). There are always new Synmetrix users seeking assistance, and providing answers is a valuable community service that showcases your expertise.
+One of the most valuable ways to contribute to Synmetrix is by helping answer user questions on the [discussion forum](https://github.com/mlcraft-io/mlcraft/discussions) or in the [Slack channel](https://www.synmetrix.org/slack-invite.html). There are always new Synmetrix users seeking assistance, and providing answers is a valuable community service that showcases your expertise.
 
 ## Contributing to Documentation
 
