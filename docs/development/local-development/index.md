@@ -62,4 +62,4 @@ For additional command-line options and information, you can check the available
 python3 cli.py --help
 ```
 
-You also need to know a [Synmetrix System Architecture](/architecture-and-design/system-architecture)
+You also need to know a [Synmetrix System Architecture](/architecture-and-design/system-architecture/index.md)

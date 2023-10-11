@@ -2,7 +2,7 @@
 id: datasources-page
 title: Datasources Page
 sidebar_label: Datasources
-slug: /interface/Datasources
+slug: /interface/datasources
 sidebar_position: 2
 ---
 
@@ -25,7 +25,7 @@ In the opened modal window, fill in all the required fields in the form. These f
 
 :::note
 
-You can find additional information on connecting to datasources [here](/docs/datasources/).
+You can find additional information on connecting to datasources [here](/docs/usage/user-guide/index.md).
 
 :::
 

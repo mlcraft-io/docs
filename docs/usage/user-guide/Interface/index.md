@@ -2,10 +2,10 @@
 id: interface
 title: Interface
 sidebar_label: Interface
-slug: /interface
+slug: /usage/user-guide/interface
 sidebar_position: 11
 ---
-![Interface](/docs/data/Interface.png)
+![Interface](/docs/data/interface.png)
 
 
 This documentation provides an in-depth guide to the various pages and features of the Synmetrix interface. Here, you will find detailed information and instructions on how to utilize each page effectively.
