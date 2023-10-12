@@ -1,7 +1,7 @@
 ---
 id: trino
 title: Trino
-slug: /usage/user-guide/data-source/trino
+slug: /testing-and-debugging/tests/data-source/trino
 sidebar_label: Trino
 ---
 

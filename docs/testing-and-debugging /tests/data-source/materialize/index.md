@@ -1,7 +1,7 @@
 ---
 id: materialize
 title: Materialize
-slug: /usage/user-guide/data-source/materialize
+slug: /testing-and-debugging/tests/data-source/materialize
 sidebar_label: Materialize
 ---
 

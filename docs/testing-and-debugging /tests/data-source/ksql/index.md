@@ -1,7 +1,7 @@
 ---
 id: ksql
 title: KSQL
-slug: /usage/user-guide/data-source/ksql
+slug: /testing-and-debugging/tests/data-source/ksql
 sidebar_label: KSQL
 ---
 

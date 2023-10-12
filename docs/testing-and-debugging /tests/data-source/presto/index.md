@@ -1,7 +1,7 @@
 ---
 id: presto
 title: Presto
-slug: /usage/user-guide/data-source/presto
+slug: /testing-and-debugging/tests/data-source/presto
 sidebar_label: Presto
 ---
 

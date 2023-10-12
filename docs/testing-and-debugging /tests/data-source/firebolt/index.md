@@ -1,7 +1,7 @@
 ---
 id: firebolt
 title: Firebolt
-slug: /usage/user-guide/data-source/firebolt
+slug: /testing-and-debugging/tests/data-source/firebolt
 sidebar_label: Firebolt
 ---
 

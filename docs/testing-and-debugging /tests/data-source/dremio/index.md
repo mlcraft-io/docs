@@ -1,7 +1,7 @@
 ---
 id: dremio
 title: Dremio
-slug: /usage/user-guide/data-source/dremio
+slug: /testing-and-debugging/tests/data-source/dremio
 sidebar_label: Dremio
 ---
 

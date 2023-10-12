@@ -1,7 +1,7 @@
 ---
 id: snowflake
 title: Snowflake
-slug: /usage/user-guide/data-source/snowflake
+slug: /testing-and-debugging/tests/data-source/snowflake
 sidebar_label: Snowflake
 ---
 

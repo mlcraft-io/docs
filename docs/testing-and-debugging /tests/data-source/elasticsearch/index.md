@@ -1,7 +1,7 @@
 ---
 id: elasticsearch
 title: Elasticsearch
-slug: /usage/user-guide/data-source/elasticsearch
+slug: /testing-and-debugging/tests/data-source/elasticsearch
 sidebar_label: Elasticsearch
 ---
 

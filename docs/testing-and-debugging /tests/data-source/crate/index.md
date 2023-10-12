@@ -1,7 +1,7 @@
 ---
 id: crate
 title: Crate
-slug: /usage/user-guide/data-source/crate
+slug: /testing-and-debugging/tests/data-source/crate
 sidebar_label: CrateDB
 ---
 

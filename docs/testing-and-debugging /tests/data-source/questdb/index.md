@@ -1,7 +1,7 @@
 ---
 id: questdb
 title: QuestDB
-slug: /usage/user-guide/data-source/questdb
+slug: /testing-and-debugging/tests/data-source/questdb
 sidebar_label: QuestDB
 ---
 

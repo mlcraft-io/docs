@@ -1,7 +1,7 @@
 ---
 id: druid
 title: Druid
-slug: /usage/user-guide/data-source/druid
+slug: /testing-and-debugging/tests/data-source/druid
 sidebar_label: Druid
 ---
 # Druid Setup Guide

@@ -19,7 +19,7 @@ Our support team is dedicated to assisting you with any questions or problems yo
 
 ## Upcoming Updates and Changes
 
-We are continuously working to improve Synmetrix and provide you with the best possible experience. Here's a glimpse of our upcoming updates and changes:
+We are continuously working to improve Synmetrix and provide you with the best possible experience. Here's a glimpse of our upcoming updates and changes: [GitHub](https://github.com/mlcraft-io/mlcraft/issues)
 
 
 

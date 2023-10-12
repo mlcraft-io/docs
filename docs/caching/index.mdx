@@ -26,7 +26,7 @@ Pre-aggregations introduce an additional layer of aggregated data, constructed a
 
 To create pre-aggregations, Synmetrix might require write access to the pre-aggregations schema within the source database. In this scenario, Synmetrix initially builds pre-aggregations as tables in the source database and then exports them to the pre-aggregations storage. Refer to your specific driver's documentation for details on read-only support and pre-aggregation build strategies.
 
-Pre-aggregations are defined within the data model. You can learn more about defining pre-aggregations in the data modeling reference.
+Pre-aggregations are defined within the data model. You can learn more about defining pre-aggregations in the [data modeling reference.](https://cube.dev/docs/product/caching/using-pre-aggregations)
 
 <Tabs
   groupId="download-method"
@@ -38,9 +38,8 @@ Pre-aggregations are defined within the data model. You can learn more about def
 >
   <TabItem value="yaml" label="YAML">
    
-    ```yaml
 
-        cubes:
+      cubes:
           - name: orders
             sql_table: orders
 
@@ -61,12 +60,9 @@ Pre-aggregations are defined within the data model. You can learn more about def
                 time_dimension: created_at
                 granularity: month
 
-      ```
-
   </TabItem>
   <TabItem value="javascript" label="JavaScript">
     
-    ```javascript
 
     cube(`orders`, {
       sql_table: `orders`,
@@ -90,7 +86,6 @@ Pre-aggregations are defined within the data model. You can learn more about def
         },
       },
 
-    ```
 
   </TabItem>
 </Tabs>
@@ -163,31 +158,8 @@ By default, in development mode, Synmetrix will check and invalidate the cache i
 
 We strongly recommend enabling background cache invalidation using a separate Synmetrix worker for production deployments. Please consult the Production Checklist for more information. If background refresh is disabled, Synmetrix will refresh the cache during query execution. To ensure optimal response times for end-users, it's advisable to always enable background refresh.
 
-This information provides an overview of Synmetrix's caching layers and how they operate to optimize query performance and data consistency. For more detailed guidance and configuration options, refer to the Synmetrix documentation.
 
-# Disabling the Cache
-
-Unfortunately, there is no direct way to disable caching in Synmetrix. This is due to the fact that Synmetrix employs caching not only for storing cached values but also for synchronization and coordination among nodes in a cluster. In the design philosophy of Synmetrix, client invocations are indistinguishable, and all calls to the data load API are idempotent. While this approach offers robust reliability and scalability, it does come with certain trade-offs. Specifically, it is impossible to trace a load data call back to a specific client, making it challenging for a client to initiate a fresh data loading query or determine if a prior invocation was initiated by another client. In such cases, the only assurance provided is the freshness of the Refresh Key.
-
-For scenarios where real-time analytics or immediate response to live user updates to the underlying data is crucial, the refresh_key query cache can appear to hinder the immediate availability of fresh data. To effectively disable the cache for such situations, you can set the `refresh_key.every` parameter to a very low value, such as 1 second.
 
 ## Inspecting Queries
 
 To gain insights into whether a query interacts with the in-memory cache, pre-aggregations, or the underlying data source, you can utilize the Synmetrix Playground or Synmetrix Cloud.
-
-### Using the Synmetrix Playground
-
-The Synmetrix Playground enables the inspection of individual queries. To achieve this, execute the query and then click the "cache" button. This action will provide you with information about the refresh_key for the query and indicate whether the query utilizes any pre-aggregations.
-
-### Using Synmetrix Cloud
-
-For a more comprehensive inspection of queries, including multiple queries or an overview of existing pre-aggregations, Synmetrix Cloud is your tool of choice.
-
-
-:::note
-For specific instructions and details regarding Synmetrix, consult the Synmetrix documentation and resources available on the Synmetrix website.
-:::
-
-:::info
-To stay up-to-date with Synmetrix and its features, consider subscribing to the Synmetrix newsletter or checking the Synmetrix blog for the latest updates and tips.
-:::
