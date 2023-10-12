@@ -1,8 +1,9 @@
 ---
 id: user-guide
 title: User Guide
-slug: /usage/user-guide/
+slug: /user-guide/
 sidebar_label: User Guide
+sidebar_position: 8
 ---
 ![User Guide](/docs/data/guide.png)
 
@@ -12,6 +13,6 @@ Welcome to the Synmetrix interface user guide. This document will provide you wi
 1. [Data Sources Page](/docs/usage/user-guide/interface/datasources-page.md)
 2. [Model Page](/docs/usage/user-guide/interface/models-page.md)
 3. [Logs Page](/docs/usage/user-guide/interface/logs-page.md)
-4. [Alerts Page](/docs/usage/user-guide/interface/alerts-page.md))
-5. [Reports Page](/docs/usage/user-guide/interface/reports-page.md))
-6. [Team Page](/docs/usage/user-guide/interface/team-page.md))
+4. [Alerts Page](/docs/usage/user-guide/interface/alerts-page.md)
+5. [Reports Page](/docs/usage/user-guide/interface/reports-page.md)
+6. [Team Page](/docs/usage/user-guide/interface/team-page.md)
