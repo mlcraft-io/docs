@@ -26,3 +26,12 @@
   --ifm-color-primary-lightest: #c147e6;
   --ifm-background-color: #ffffff;
 }
+
+.menu__caret:before {
+height: 0.8rem;
+width: 0.8rem;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
