@@ -11,64 +11,94 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Overview',
-    Svg: require('@site/static/img/overview.svg').default,
+    title: 'Quick Start',
+    Svg: require('@site/static/img/start.svg').default,
     description: (
       <>
-        This is the overview of our project.
+        Get started quickly with our quick start guide.
       </>
     ),
-    link: '/docs/overview',
+    link: '/docs/quickstart',
   },
   {
-    title: 'Data Sources',
-    Svg: require('@site/static/img/data.svg').default,
+    title: 'Development',
+    Svg: require('@site/static/img/Development.svg').default,
     description: (
       <>
-        Learn about data sources.
+        Learn about development practices and guidelines.
       </>
     ),
-    link: '/docs/interface/datasources',
+    link: '/docs/development',
   },
   {
-    title: 'Models',
-    Svg: require('@site/static/img/models.svg').default,
+    title: 'Requirements',
+    Svg: require('@site/static/img/requirements.svg').default,
     description: (
       <>
-        Explore models.
+        Check out the requirements for your project.
       </>
     ),
-    link: '/docs/interface/models',
+    link: '/docs/production-deployment/requirements',
   },
   {
-    title: 'Alerts',
-    Svg: require('@site/static/img/alerts.svg').default,
+    title: 'Production Deployment',
+    Svg: require('@site/static/img/deployment.svg').default,
     description: (
       <>
-        Understand alerts.
+        Explore how to deploy your project in a production environment.
       </>
     ),
-    link: '/docs/interface/alerts',
+    link: '/docs/production-deployment',
   },
   {
-    title: 'Reports',
-    Svg: require('@site/static/img/reports.svg').default,
+    title: 'Architecture and Design',
+    Svg: require('@site/static/img/architecture.svg').default,
     description: (
       <>
-        Access reports.
+        Understand the architecture and design of our project.
       </>
     ),
-    link: '/docs/interface/reports',
+    link: '/docs/architecture-and-design',
   },
   {
-    title: 'Logs',
-    Svg: require('@site/static/img/logs.svg').default,
+    title: 'Caching',
+    Svg: require('@site/static/img/caching.svg').default,
     description: (
       <>
-        View logs.
+        Learn about caching and its importance in our project.
       </>
     ),
-    link: '/docs/interface/logs',
+    link: '/docs/caching',
+  },
+  {
+    title: 'SQL Interface',
+    Svg: require('@site/static/img/sql.svg').default,
+    description: (
+      <>
+        Explore the SQL interface in our project.
+      </>
+    ),
+    link: '/docs/sql-interface',
+  },
+  {
+    title: 'User Guide',
+    Svg: require('@site/static/img/User Guide.svg').default,
+    description: (
+      <>
+        A comprehensive user guide to help you get started.
+      </>
+    ),
+    link: '/docs/user-guide/',
+  },
+  {
+    title: 'Testing and Debugging',
+    Svg: require('@site/static/img/testing.svg').default,
+    description: (
+      <>
+        Tips and techniques for testing and debugging your project.
+      </>
+    ),
+    link: '/docs/testing-and-debugging',
   },
 ];
 
