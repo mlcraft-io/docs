@@ -2,7 +2,7 @@
 id: alerts-page
 title: Alerts Page
 sidebar_label: Alerts
-slug: /interface/alerts
+slug: /user-guide/interface/alerts
 sidebar_position: 4
 ---
 

@@ -2,7 +2,7 @@
 id: datasources-page
 title: Datasources Page
 sidebar_label: Datasources
-slug: /interface/datasources
+slug: /user-guide/interface/datasources
 sidebar_position: 2
 ---
 

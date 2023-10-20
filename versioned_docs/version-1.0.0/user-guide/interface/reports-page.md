@@ -2,7 +2,7 @@
 id: reports-page
 title: Reports Page
 sidebar_label: Reports
-slug: /interface/reports
+slug: /user-guide/interface/reports
 sidebar_position: 5
 ---
 

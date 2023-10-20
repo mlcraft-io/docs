@@ -2,7 +2,7 @@
 id: logs-page
 title: Logs Page
 sidebar_label: Logs
-slug: /interface/logs
+slug: /user-guide/interface/logs
 sidebar_position: 6
 ---
 ## Overview

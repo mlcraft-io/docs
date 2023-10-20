@@ -2,7 +2,7 @@
 id: models-page
 title: Models Page
 sidebar_label: Models
-slug: /interface/models
+slug: /user-guide/interface/models
 sidebar_position: 3
 ---
 

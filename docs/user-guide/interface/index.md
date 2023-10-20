@@ -2,7 +2,7 @@
 id: interface
 title: Interface
 sidebar_label: Interface
-slug: /usage/user-guide/interface
+slug: /user-guide/interface
 sidebar_position: 11
 ---
 ![Interface](/docs/data/interface.png)

@@ -2,7 +2,7 @@
 id: team-page
 title: Teams Page
 sidebar_label: Teams
-slug: /interface/teams
+slug: /user-guide/interface/teams
 sidebar_position: 7
 ---
 
