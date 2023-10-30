@@ -76,6 +76,11 @@ const config = {
             position: "left",
             label: "Documentation",
           },
+          {
+            type: "docsVersionDropdown",
+            position: "right",
+            dropdownActiveClassDisabled: true,
+          },
         ],
       },
       footer: {
