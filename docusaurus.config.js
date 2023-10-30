@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Synmetrix Docs v.1.0.0",
+  title: "Synmetrix Docs",
   tagline: "Explore our comprehensive documentation to get started",
   favicon: "img/favicon.ico",
 
