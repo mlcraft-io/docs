@@ -65,11 +65,9 @@ Choose a dataset and click **Add data**.
 
 Now you can create a datasource in Synmetrix using the following information:
 
-```
-Name: Elasticsearch test datasource
-Url: http://<host_ip>:9200
-User: user
-Password: password
-```
+* Name: Elasticsearch test datasource
+* Url: http://<host_ip>:9200
+* User: user
+* Password: password
 
 Save the datasource and click **Test connection**. You should see a message indicating that the connection is OK.

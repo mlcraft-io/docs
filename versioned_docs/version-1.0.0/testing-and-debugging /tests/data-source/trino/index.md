@@ -35,13 +35,11 @@ After the script has finished running, it will return the host IP address of you
 
 Go to the Synmetrix UI and add a new data source with the following parameters:
 
-<pre>
-Name: Trino Test
-Host: Host IP (obtained from the script in Step 2)
-Port: 8050
-Catalog: tpch
-User: user
-</pre>
+* Name: Trino Test
+* Host: Host IP (obtained from the script in Step 2)
+* Port: 8050
+* Catalog: tpch
+* User: user
 
 ## Step 4: Test the connection
 

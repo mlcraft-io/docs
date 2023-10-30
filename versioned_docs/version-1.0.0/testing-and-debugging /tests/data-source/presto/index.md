@@ -37,13 +37,11 @@ After the script has finished running, it will return the host IP address of you
 
 Go to the Synmetrix UI and add a new data source with the following parameters:
 
-<pre>
-Name: PrestoDB Test
-Host: Host IP (obtained from the script in Step 2)
-Port: 8050
-Catalog: tpch
-User: user
-</pre>
+* Name: PrestoDB Test
+* Host: Host IP (obtained from the script in Step 2)
+* Port: 8050
+* Catalog: tpch
+* User: user
 
 ## Step 4: Test the connection
 Click the "Check connection" button in the Synmetrix UI to verify the connection to the PrestoDB data source. If the connection is successful, you will see a confirmation message.
