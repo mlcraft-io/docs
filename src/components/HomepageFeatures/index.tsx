@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  ImgPath: string;
   description: JSX.Element;
   link: string;
 };
@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Quick Start',
-    Svg: require('@site/static/img/start.svg').default,
+    ImgPath: require('@site/static/img/start.png').default,
     description: (
       <>
         Get started quickly with our quick start guide.
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Development',
-    Svg: require('@site/static/img/Development.svg').default,
+    ImgPath: require('@site/static/img/development.png').default,
     description: (
       <>
         Learn about development practices and guidelines.
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Requirements',
-    Svg: require('@site/static/img/requirements.svg').default,
+    ImgPath: require('@site/static/img/requirements.png').default,
     description: (
       <>
         Check out the requirements for your project.
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Production Deployment',
-    Svg: require('@site/static/img/deployment.svg').default,
+    ImgPath: require('@site/static/img/deployment.png').default,
     description: (
       <>
         Explore how to deploy your project in a production environment.
@@ -52,7 +52,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Architecture and Design',
-    Svg: require('@site/static/img/architecture.svg').default,
+    ImgPath: require('@site/static/img/architecture.png').default,
     description: (
       <>
         Understand the architecture and design of our project.
@@ -62,7 +62,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Caching',
-    Svg: require('@site/static/img/caching.svg').default,
+    ImgPath: require('@site/static/img/caching.png').default,
     description: (
       <>
         Learn about caching and its importance in our project.
@@ -72,7 +72,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'SQL Interface',
-    Svg: require('@site/static/img/sql.svg').default,
+    ImgPath: require('@site/static/img/sql.png').default,
     description: (
       <>
         Explore the SQL interface in our project.
@@ -82,7 +82,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'User Guide',
-    Svg: require('@site/static/img/User Guide.svg').default,
+    ImgPath: require('@site/static/img/user-guide.png').default,
     description: (
       <>
         A comprehensive user guide to help you get started.
@@ -92,7 +92,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Testing and Debugging',
-    Svg: require('@site/static/img/testing.svg').default,
+    ImgPath: require('@site/static/img/testing.png').default,
     description: (
       <>
         Tips and techniques for testing and debugging your project.
@@ -102,11 +102,11 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, Svg, description, link }: FeatureItem) {
+function Feature({ title, ImgPath, description, link }: FeatureItem) {
   return (
     <a href={link} className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={ImgPath} className={styles.featureImg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
