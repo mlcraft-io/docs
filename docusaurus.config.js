@@ -10,16 +10,11 @@ const config = {
   tagline: "Explore our comprehensive documentation to get started",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
-  url: "https://docs.synmetrix.org",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: "https://mlcraft-io.github.io", // Your website URL
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "mlcraft-io", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
+  projectName: "mlcraft-io.github.io",
+  organizationName: "mlcraft-io",
+  trailingSlash: false,
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
