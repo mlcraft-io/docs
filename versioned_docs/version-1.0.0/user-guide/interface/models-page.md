@@ -23,7 +23,7 @@ Now you should see the generated data model files in the right column (as shown 
 The version control system tracks changes to the data models, allowing you to revert to previous states of the models.
 
 To view the saved versions, open the drop-down menu located at the top left of the page and select the "Show versions" option (as shown in the screenshot below).
-![Versions](/docs/interface/img/models3.png)
+![Versions](/docs/interface/img/models3_.png)
 
 In the opened window, you will see all the saved versions of the data models (as shown in the screenshot below). By expanding the rows, you can view the files and their contents. To revert to a specific version, simply click the "Restore" button next to it, and it will become the current version.
 ![Restore version](/docs/interface/img/models4.png)
