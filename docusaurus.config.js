@@ -4,16 +4,20 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+const organizationName = "mlcraft-io";
+const projectName = "docs";
+const baseUrl = `/${projectName}/`;
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Synmetrix Docs",
   tagline: "Explore our comprehensive documentation to get started",
   favicon: "img/favicon.ico",
 
-  url: "https://mlcraft-io.github.io", // Your website URL
-  baseUrl: "/",
-  projectName: "mlcraft-io.github.io",
-  organizationName: "mlcraft-io",
+  url: `https://${organizationName}.github.io`,
+  baseUrl,
+  organizationName,
+  projectName,
   trailingSlash: false,
 
   onBrokenLinks: "throw",
@@ -34,17 +38,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
