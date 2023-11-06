@@ -25,7 +25,7 @@ In the opened modal window, fill in all the required fields in the form. These f
 
 :::note
 
-You can find additional information on connecting to datasources [here](/docs/usage/user-guide/index.md).
+You can find additional information on connecting to datasources [here](/docs/user-guide/index.md).
 
 :::
 
