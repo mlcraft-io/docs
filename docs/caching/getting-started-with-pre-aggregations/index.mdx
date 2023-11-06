@@ -1,0 +1,150 @@
+---
+id: getting-started-with-pre-aggregations
+title: Getting started with pre-aggregations
+sidebar_label: Getting started with pre-aggregations
+slug: /caching/getting-started-with-pre-aggregations
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Often at the beginning of an analytical application's lifecycle - when there is
+a smaller dataset that queries execute over - the application works well and
+delivers responses within acceptable thresholds. However, as the size of the
+dataset grows, the time-to-response from a user's perspective can often suffer
+quite heavily. This is true of both application and purpose-built data
+warehousing solutions.
+
+This leaves us with a chicken-and-egg problem; application databases can deliver
+low-latency responses with small-to-large datasets, but struggle with massive
+analytical datasets; data warehousing solutions _usually_ make no guarantees
+except to deliver a response, which means latency can vary wildly on a
+query-to-query basis.
+
+| Database Type                  | Low Latency? | Massive Datasets? |
+| ------------------------------ | ------------ | ----------------- |
+| Application (Postgres/MySQL)   | ✅            | ❌                 |
+| Analytical (BigQuery/Redshift) | ❌            | ✅                 |
+
+
+Cube provides a solution to this problem: pre-aggregations. In layman's terms, a
+pre-aggregation is a condensed version of the source data. It specifies
+attributes from the source, which Cube uses to condense (or crunch) the data.
+This simple yet powerful optimization can reduce the size of the dataset by
+several orders of magnitude, and ensures subsequent queries can be served by the
+same condensed dataset if any matching attributes are found.
+
+
+## Pre-Aggregations without Time Dimension
+
+To illustrate pre-aggregations with an example, let's use a sample e-commerce
+database. We have a data model representing all our `orders`:
+
+**YAML** 
+
+```yaml
+cubes:
+  - name: orders
+    sql_table: orders
+
+    measures:
+      - name: count
+        type: count
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+
+      - name: status
+        sql: status
+        type: string
+
+      - name: completed_at
+        sql: completed_at
+        type: time
+```
+**JavaScript** 
+
+```javascript
+cube(`orders`, {
+  sql_table: `orders`,
+
+  measures: {
+    count: {
+      type: `count`,
+    },
+  },
+
+  dimensions: {
+    id: {
+      sql: `id`,
+      type: `number`,
+      primary_key: true,
+    },
+
+    status: {
+      sql: `status`,
+      type: `string`,
+    },
+
+    completed_at: {
+      sql: `completed_at`,
+      type: `time`,
+    },
+  },
+});
+```
+
+Some sample data from this table might look like:
+
+
+| **id** | **status** | **completed_at**        |
+| ------ | ---------- | ----------------------- |
+| 1      | completed  | 2021-02-15T12:21:11.290 |
+| 2      | completed  | 2021-02-25T18:15:12.369 |
+| 3      | shipped    | 2021-03-15T20:40:57.404 |
+| 4      | processing | 2021-03-13T10:30:21.360 |
+| 5      | completed  | 2021-03-10T18:25:32.109 |
+
+
+Our first requirement is to populate a dropdown in our front-end application
+which shows all possible statuses. The Cube query to retrieve this information
+might look something like:
+
+**JSON** 
+
+```json
+{
+  "dimensions": ["orders.status"]
+}
+```
+
+In that case, we can add the following pre-aggregation to the `orders` cube:
+
+**YAML** 
+
+```yaml
+cubes:
+  - name: orders
+    # ...
+
+    pre_aggregations:
+      - name: order_statuses
+        dimensions:
+          - status
+```
+
+**JavaScript** 
+```javascript
+cube(`orders`, {
+  // ...
+
+  pre_aggregations: {
+    order_statuses: {
+      dimensions: [status],
+    },
+  },
+});
+```
