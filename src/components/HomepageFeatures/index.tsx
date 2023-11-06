@@ -4,54 +4,115 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  ImgPath: string;
   description: JSX.Element;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Quick Start',
+    ImgPath: require('@site/static/img/start.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Get started quickly with our quick start guide.
       </>
     ),
+    link: '/docs/quickstart',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Development',
+    ImgPath: require('@site/static/img/development.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn about development practices and guidelines.
       </>
     ),
+    link: '/docs/development',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Requirements',
+    ImgPath: require('@site/static/img/requirements.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Check out the requirements for your project.
       </>
     ),
+    link: '/docs/production-deployment/requirements',
+  },
+  {
+    title: 'Production Deployment',
+    ImgPath: require('@site/static/img/deployment.png').default,
+    description: (
+      <>
+        Explore how to deploy your project in a production environment.
+      </>
+    ),
+    link: '/docs/production-deployment',
+  },
+  {
+    title: 'Architecture and Design',
+    ImgPath: require('@site/static/img/architecture.png').default,
+    description: (
+      <>
+        Understand the architecture and design of our project.
+      </>
+    ),
+    link: '/docs/architecture-and-design',
+  },
+  {
+    title: 'Caching',
+    ImgPath: require('@site/static/img/caching.png').default,
+    description: (
+      <>
+        Learn about caching and its importance in our project.
+      </>
+    ),
+    link: '/docs/caching',
+  },
+  {
+    title: 'SQL Interface',
+    ImgPath: require('@site/static/img/sql.png').default,
+    description: (
+      <>
+        Explore the SQL interface in our project.
+      </>
+    ),
+    link: '/docs/sql-interface',
+  },
+  {
+    title: 'User Guide',
+    ImgPath: require('@site/static/img/user-guide.png').default,
+    description: (
+      <>
+        A comprehensive user guide to help you get started.
+      </>
+    ),
+    link: '/docs/user-guide/',
+  },
+  {
+    title: 'Testing and Debugging',
+    ImgPath: require('@site/static/img/testing.png').default,
+    description: (
+      <>
+        Tips and techniques for testing and debugging your project.
+      </>
+    ),
+    link: '/docs/testing-and-debugging',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, ImgPath, description, link }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <a href={link} className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={ImgPath} className={styles.featureImg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </a>
   );
 }
 
