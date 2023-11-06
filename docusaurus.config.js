@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const organizationName = "mlcraft-io";
 const projectName = "docs";
-const baseUrl = `/${projectName}/`;
+const baseUrl = "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
