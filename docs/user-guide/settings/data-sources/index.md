@@ -43,6 +43,6 @@ You can find additional information on connecting to datasources [here](/docs/us
 
 :::tip Fast Switching Data Sources in Synmetrix
 
-In Synmetrix, switching between data sources is a straightforward process. You can find the data models dropdown in the sidebar menu of both the ["Models"](/docs/user-guide/models/index.md) and ["Explore"](/docs/user-guide/explore/index.md) pages. Simply access this menu to view and select from the available data sources. This dropdown is conveniently placed to ensure ease of access, enhancing your experience by allowing quick and efficient transitions between various data repositories within Synmetrix.
+In Synmetrix, switching between data sources is a straightforward process. You can find the data models dropdown in the sidebar menu of both the ["Models"](/docs/user-guide/models/index.md) and ["Explore"](/docs/user-guide/explore/index.mdx) pages. Simply access this menu to view and select from the available data sources. This dropdown is conveniently placed to ensure ease of access, enhancing your experience by allowing quick and efficient transitions between various data repositories within Synmetrix.
 
 :::

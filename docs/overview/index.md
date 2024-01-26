@@ -38,7 +38,7 @@ To make the most of this documentation, you can explore the following sections:
 
 - [Quick Start](/docs/overview/index.md): Installation and initial setup of Synmetrix.
 
-- [User Guide](/docs/usage/user-guide/index.md): In-depth guides on using Synmetrix.
+- [User Guide](/docs/user-guide/index.md): In-depth guides on using Synmetrix.
 
 - [Contributing](/docs/development/contributing/index.md): Information on how to contribute to the development of Synmetrix.
 
