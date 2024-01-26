@@ -1,6 +1,6 @@
 ---
 id: docker-swarm
-title: ocker Swarm deployment guide
+title: Docker Swarm deployment guide
 slug: /docker-swarm
 sidebar_label: Docker Swarm
 ---
