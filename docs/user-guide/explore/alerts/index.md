@@ -18,7 +18,7 @@ Follow these steps to efficiently set up your alerts:
 ![Alerts Page Creation](/docs/img/alert1.png)
 
 1. Choose your notification delivery method. Options include Webhook, Slack, or Email, depending on your system integrations and preferences.
-![Delivery Method Selection](/docs/img/alert2.png)
+![Delivery Method Selection](/docs/img/alert-new.png)
 
 1. Complete the alert form with the necessary information:
 ![Alert Configuration Form](/docs/img/alert3.png)

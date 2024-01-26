@@ -7,6 +7,9 @@ sidebar_position: 6
 ---
 ## Overview
 
+![Alert Logs](/docs/img/logs1.png)
+
+
 The Logs page is designed to provide control over the internal workings of the Cube.js service. It allows you to review the requests and the events that occur during the processing of these events. You can access information such as the execution time, start and end time, the actual query, and additional technical details. This enables you to monitor and analyze the performance and behavior of the Cube.js service. Follow the instructions below to utilize the Logs page:
 
 1. Access the Logs page within the project interface.

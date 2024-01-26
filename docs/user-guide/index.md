@@ -13,7 +13,7 @@ The interface documentation is organized into separate pages, each focusing on a
 
 ## Table of Contents
 
-!import DocCardList from '@theme/DocCardList';
+import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
