@@ -17,11 +17,11 @@ Before you begin, make sure you have the following prerequisites installed:
 - [Docker](https://docs.docker.com/install)
 - [Docker Compose](https://docs.docker.com/compose/install)
 
-### Step 1: Get the Docker Compose File
+### Step 1: Download the docker-compose file
 
-The [mlcraft-io/mlcraft/install-manifests](https://github.com/mlcraft-io/mlcraft/tree/main/install-manifests) repository contains all installation manifests required to deploy Synmetrix anywhere. You can get the Docker Compose file from there by running one of the following commands:
+The repository [mlcraft-io/mlcraft/install-manifests](https://github.com/mlcraft-io/mlcraft/tree/main/install-manifests) houses all the necessary installation manifests for deploying Synmetrix anywhere. You can download the docker compose file from this repository:
 
-**In a new directory, run one of the following commands**
+**Execute this in a new directory**
 
 <Tabs
   defaultValue="wget"
@@ -47,41 +47,54 @@ The [mlcraft-io/mlcraft/install-manifests](https://github.com/mlcraft-io/mlcraft
 
 
 
-### Step 2: Run Synmetrix
+### Step 2: Launch Synmetrix
 
-To run Synmetrix along with a Postgres database to store its data, execute the following command:
+Execute the following command to start Synmetrix along with a Postgres database for data storage.
 
 ```bash
 $ docker-compose up -d
 ```
 
-You can check if the containers are running by using the following command:
+Verify if the containers are operational:
 
 ```bash
 $ docker ps
 
 CONTAINER ID IMAGE                 ... CREATED STATUS PORTS          ...
-c8f342d086f3 mlcraft/mlcraft-stack ... 1m ago  Up 1m  80->8888/tcp ...
+c8f342d086f3 synmetrix/stack       ... 1m ago  Up 1m  80->8888/tcp ...
 30ea14ddaa5e postgres:12           ... 1m ago  Up 1m  5432/tcp    
 ```
 
-### Step 3: Try out Synmetrix
+The installation of all dependencies will take approximately 5-7 minutes. Wait until you see the `Synmetrix Stack is ready` message. You can view the logs using `docker-compose logs -f` to confirm if the process has completed.
 
-You can now try out Synmetrix:
 
-- Synmetrix itself will be available at `http://localhost/`
-- GraphQL endpoint: `http://localhost/v1/graphql`
-- Admin Console (Hasura Console) will be available at `http://localhost/console`
+### Step 3: Explore Synmetrix
 
+* You can access Synmetrix at [http://localhost/](http://localhost/)
+
+* The GraphQL endpoint is located at [http://localhost/v1/graphql](http://localhost/v1/graphql)
+
+* The Admin Console (Hasura Console) can be found at [http://localhost/console](http://localhost/console)
+
+* The Cube Swagger API can be found at [http://localhost:4000/docs](http://localhost:4000/docs)
 
 
 :::note
 
-Make sure to check `HASURA_GRAPHQL_ADMIN_SECRET` in the `docker-compose` file. You'll need it to access the Admin Console.
+Remember to look at `HASURA_GRAPHQL_ADMIN_SECRET` in the docker-compose file. This is required to access the Admin Console. Default value: `adminsecret`
 
 :::
 
 
 
 If you need assistance or want to schedule a 30-minute call with our team to help you get set up, please select a time directly [here](https://cal.com/synmetrix/30min).
+
+
+## Demo
+
+Demo: [app.synmetrix.org](https://app.synmetrix.org)
+
+* Login: `demo@synmetrix.org`
+* Password: `demodemo`
+
 
