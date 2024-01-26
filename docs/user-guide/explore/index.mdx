@@ -1,0 +1,139 @@
+---
+id: explore
+title: Explore Page
+sidebar_label: Explore Page
+slug: /user-guide/explore
+sidebar_position: 1
+---
+
+# Explore Page
+![Explore Page](/docs/img/explore.png)
+
+## Overview
+
+The Explore page serves as a dynamic and intuitive platform for users to engage with data, offering tools and options for efficient data exploration and analysis. This includes changing data sources, selecting branches, and manipulating data dimensions, measures, and filters. Additional functionalities allow users to run queries, set up alerts or reports, and export data.
+
+
+## Sidebar Actions
+![Sidebar](/docs/img/sidebar.png)
+
+The sidebar in your data tool is where you can do a lot of important stuff. Let's go over how to change your data source, switch branches, and pick the right dimensions and measures.
+
+### Changing Data Source in Explorer
+![Changing Data Source in Explorer](/docs/img/change-datasource.png)
+To switch to a different data source:
+
+1. **Find the Data Source in the sidebar.**
+
+2. **Pick a New Data Source**: Click on the list there and choose the one you want.
+
+3. **It's Changed!**: Your data source will change right away.
+
+### Switching Branches in Explorer
+![Switching Branches in Explorer](/docs/img/change-branch-explore.png)
+To change the branch you're working on:
+
+1. **Look for Branch Section in the sidebar.**
+
+2. **Choose Your Branch**: Click on the list and pick the branch you need.
+
+3. **Branch Changed**: Now you're working in the new branch.
+
+### Selecting Dimensions and Measures
+![Selecting Dimensions and Measures](/docs/img/models-sidebar.png)
+
+Picking the right dimensions and measures is super important for looking at your data the right way. Here's what to do:
+
+1. **Go to the Sidebar**: First, find the sidebar.
+
+2. **Click on Your Model**: There's a part that says 'Model'. Click it and you'll see a list.
+
+3. **See All the Options**: This list shows all the dimensions and measures you can use.
+
+4. **Pick What You Need**: Choose the ones that are right for what you're doing.
+
+5. **Run Your Query**: After picking, run your query to see your data.
+
+:::tip
+
+- **Quick Find**: Use the search box to find dimensions or measures fast.
+- **Types of Dimensions**: You can pick from time, string, number, boolean, and geo.
+- **How Dimensions Look**: They can be in formats like images, links, or percentages.
+- **Measures are Numbers**: They usually show quantities.
+- **Measure Formats**: Like percentages or currency.
+
+:::
+
+
+### Adding Filters
+![Guide to Adding Filters](/docs/img/filter.png)
+Incorporating filters into your analysis is a crucial step for refining and focusing your data exploration. Here’s a professional approach to adding filters through the Explorer Sidebar:
+
+1. **Navigate to Explorer Sidebar**: Begin by accessing the sidebar options within the Explorer.
+
+2. **Hover Over Measures or Dimensions**: Move your cursor over either the Measures or Dimensions sections in the sidebar.
+
+3. **Initiate Filter Selection**: Look for a filter icon on the specific measure or dimension you are interested in. Click on this icon to start setting up a filter.
+
+4. **Configure Filter in Result Tab**: After clicking the filter button, switch to the "Result" tab. Here, you'll find options to customize your filter according to your specific data requirements.
+  
+   ![Process of Adding Filters](/docs/img/filter2.png)
+
+## Explore Toolbar Functionality Overview
+![Toolbar in Action](/docs/img/toolbar.png)
+
+The toolbar in your data analysis tool is equipped with a variety of features to enhance your data exploration and reporting capabilities. Here's a breakdown of the key actions available:
+
+### Run Query
+- **Function**: Runs the analysis based on the selected dimensions, measures, and filters.
+- **Purpose**: To dynamically generate and view data results tailored to your current selections.
+
+### Set Up Alerts
+- **Function**: Allows for the creation of alerts based on specific data conditions.
+- **Usage**: Configure alert parameters to monitor data changes and receive notifications.
+
+### Generate Reports
+- **Function**: Creates reports reflecting your current data view.
+- **Customization**: Offers options to define report parameters and settings for targeted reporting.
+
+### Export to CSV
+- **Function**: Enables the export of data into a CSV file.
+- **Application**: Useful for offline data analysis or for sharing data externally.
+
+## Work with data
+
+### Results Tab
+![Results Tab](/docs/img/results-tab.png)
+
+- **Display**: Shows the outcome of your executed queries.
+- **Adjustments**: Allows configuration of row limits, offsets, and view of applied filters.
+
+### Generated SQL Tab
+![Generated SQL Tab](/docs/img/sql-tab.png)
+
+- **Function**: Displays the automatically generated SQL query post-execution.
+- **Utility**: Useful for understanding the query structure or for manual SQL query replication.
+
+### REST API Tab
+![REST API Tab](/docs/img/rest-api-tab.png)
+- **Access Details**: Provides necessary API information for data retrieval.
+- **Components**: Includes headers and the API endpoint URL.
+
+#### Example API Utilization
+![Example API Utilization](/docs/img/rest-api.png)
+
+- **Headers**: 
+  - `Authorization: Bearer <token>`
+  - `x-hasura-datasource-id: <datasource-id>`
+  - `x-hasura-branch-id: <branch-id>`
+- **URL**: `http://cube.synmetrix.org/api/v1/load`
+- **Body**: Follow the API documentation for accurate setup.
+
+**Execute API Request**: Enables sending an API request directly from the interface.
+
+**REST API Documentation**: Access the link for comprehensive API usage instructions and details.
+
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

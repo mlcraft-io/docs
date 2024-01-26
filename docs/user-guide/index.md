@@ -7,12 +7,17 @@ sidebar_position: 8
 ---
 ![User Guide](/docs/data/guide.png)
 
-Welcome to the Synmetrix interface user guide. This document will provide you with detailed information on how to effectively use the Synmetrix interface for your needs.
+This documentation provides an in-depth guide to the various pages and features of the Synmetrix interface. Here, you will find detailed information and instructions on how to utilize each page effectively.
+
+The interface documentation is organized into separate pages, each focusing on a specific aspect of the Synmetrix interface. Below are the links to the documentation for each page:
 
 ## Table of Contents
-1. [Data Sources Page](/docs/user-guide/interface/datasources-page.md)
-2. [Model Page](/docs/user-guide/interface/models-page.md)
-3. [Logs Page](/docs/user-guide/interface/logs-page.md)
-4. [Alerts Page](/docs/user-guide/interface/alerts-page.md)
-5. [Reports Page](/docs/user-guide/interface/reports-page.md)
-6. [Team Page](/docs/user-guide/interface/team-page.md)
+
+!import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+
+
+Feel free to explore the documentation for each page to gain a comprehensive understanding of the Synmetrix interface and its functionalities.
+
+Happy exploring and analyzing data with Synmetrix!
