@@ -38,29 +38,4 @@ When submitting code contributions, you must sign a [Developer Certificate of Or
 This is my commit message
 
 Signed-off-by: Random J Developer <random@developer.example.org>
-
-
-The process is automatically managed by the Probot app for GitHub.
-
-IDE Settings
-The recommended development environment for Synmetrix is IntelliJ IDEA. Refer to the README for instructions on importing and configuring Synmetrix to work with IntelliJ IDEA.
-
-Synmetrix does not enforce strict code formatting, but it is recommended to adhere to the following settings:
-
-Use spaces for indentation
-Tab size: 4
-Indent: 4
-Use single class import
-Class count to use import with *: 99
-Names count to use static import with *: 99
-Imports layout:
-<blank line>
-import org.junit.*
-import spock.lang.*
-<blank line>
-import java.*
-import javax.*
-<blank line>
-all other imports
-all other static imports
-New files must include the appropriate license header boilerplate, author name(s), and contact email(s) (example).
+```
