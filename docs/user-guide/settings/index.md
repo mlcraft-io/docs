@@ -7,6 +7,7 @@ sidebar_position: 8
 
 ## Table of Contents
 
-!import DocCardList from '@theme/DocCardList';
+
+import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

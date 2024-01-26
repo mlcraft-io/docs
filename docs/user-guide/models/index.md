@@ -11,7 +11,7 @@ The Models page is a powerful tool for generating and managing models in your pr
 ## How to Get Started
 
 1. To get started, you need to generate data models. Select the "Generate Model" option from the menu (shown in the screenshot below).
-   ![Generate Model button](/docs/img/model-page.png)
+   ![Generate Model button](/docs/img/model-generate-new.png)
 
 2. In the opened window, navigate to the required sections by opening the corresponding tabs and check the boxes next to the tables or metrics you want to analyze. Then, click the "Generate" button (indicated by the arrow in the screenshot below).
    ![Checkboxes](/docs/interface/img/models2.png)

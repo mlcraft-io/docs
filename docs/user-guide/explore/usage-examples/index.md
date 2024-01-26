@@ -20,7 +20,7 @@ slug: /user-guide/explore/usage-examples-explore
 ### Detailed Steps for Data Analysis
 
 **Step 1:**  
-Initialize by adding a Data Source, either during the [Onboarding](/docs/user-guide/onboarding) process or through the [Settings](/docs/user-guide/settings) section.
+Initialize by adding a Data Source, either during the [Onboarding](/docs/user-guide/onboarding) process or through the [Settings](/docs/user-guide/settings/data-sources/index.md) section.
 
 **Step 2:**  
 Create a model, such as the 'Covid' model. Select **COVID LOCATION KEY DIMENSIONS** and **COVID COUNT MEASURES** for your analysis.

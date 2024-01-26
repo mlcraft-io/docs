@@ -18,7 +18,7 @@ Now, you can proceed with creating and configuring your report.
 ![Reports Page](/docs/img/report1.png)
 
 1. Select the destination where the screenshot will be sent. You can choose between Webhook, Slack, or Email based on your preferences and integrations.
-![Reports Destination](/docs/img/report2.png)
+![Reports Destination](/docs/img/report-new.png)
 
 1. Fill out the report form with the following details:
 ![Reports Form](/docs/img/report3.png)
