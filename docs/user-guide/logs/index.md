@@ -18,14 +18,6 @@ The Logs page is designed to provide control over the internal workings of the C
 4. Use the logs as a resource for troubleshooting, performance optimization, and gaining insights into the inner workings of the Cube.js service.
 
 
-## Alerts Logs
-
-![Alert Logs](/docs/interface/img/logs1.png)
-
-## Report Logs
-
-![Report Logs](/docs/interface/img/logs1.png)
-
-## Query Logs
+## Query Logs filters
 
 ![Query Logs](/docs/interface/img/logs3.png)
