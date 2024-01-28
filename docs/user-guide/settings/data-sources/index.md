@@ -24,11 +24,6 @@ A list of available datasource types will be displayed. Select the desired type 
 ### Step 3
 In the opened modal window, fill in all the required fields in the form. These fields may include connection details, authentication credentials, and other relevant information.
 
-:::note
-
-You can find additional information on connecting to datasources [here](/docs/user-guide/index.md).
-
-:::
 
    On the screenshot below, you can see a modal window with the datasource creation form.
    ![Datasource Creation Form](/docs/interface/img/data2.png)
@@ -43,6 +38,6 @@ You can find additional information on connecting to datasources [here](/docs/us
 
 :::tip Fast Switching Data Sources in Synmetrix
 
-In Synmetrix, switching between data sources is a straightforward process. You can find the data models dropdown in the sidebar menu of both the ["Models"](/docs/user-guide/models/index.md) and ["Explore"](/docs/user-guide/explore/index.mdx) pages. Simply access this menu to view and select from the available data sources. This dropdown is conveniently placed to ensure ease of access, enhancing your experience by allowing quick and efficient transitions between various data repositories within Synmetrix.
+In Synmetrix, switching between data sources is a straightforward process. You can find the data models dropdown in the sidebar menu of both the ["Models"](/docs/user-guide/models) and ["Explore"](/docs/user-guide/explore) pages. Simply access this menu to view and select from the available data sources. This dropdown is conveniently placed to ensure ease of access, enhancing your experience by allowing quick and efficient transitions between various data repositories within Synmetrix.
 
 :::
