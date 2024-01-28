@@ -14,7 +14,7 @@ Follow these steps to efficiently set up your alerts:
 
 ## How to Set Up an Alert
 
-1. Click the "Create Alert" button on the Explore page.
+1. Click the "Add Alert" button on the Explore page.
 ![Alerts Page Creation](/docs/img/alert1.png)
 
 1. Choose your notification delivery method. Options include Webhook, Slack, or Email, depending on your system integrations and preferences.
@@ -31,7 +31,7 @@ Follow these steps to efficiently set up your alerts:
 
 This section offers a comprehensive overview of the Alert or Report setup. Key features include:
 
-  **Query Key**: This is the primary metric that your alert or report is based on. It's a critical element in the monitoring process.
+  **Query Key**: This is the primary query that your alert or report is based on. It's a critical element in the monitoring process.
 
   **Measures**: Select the quantitative data points you wish to track or display. These are crucial for your analysis and will be highlighted in the Preview.
 

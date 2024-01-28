@@ -14,7 +14,7 @@ Now, you can proceed with creating and configuring your report.
 
 ## How to Create a Report
 
-1. Click the "Create" button on the Explore page.
+1. Click the "Add Report" button on the Explore page.
 ![Reports Page](/docs/img/report1.png)
 
 1. Select the destination where the screenshot will be sent. You can choose between Webhook, Slack, or Email based on your preferences and integrations.
