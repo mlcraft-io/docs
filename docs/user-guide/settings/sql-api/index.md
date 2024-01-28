@@ -46,7 +46,7 @@ Obtain your SQL API credentials through two distinct methods:
     - Database: `db`
     - Login: `4x4qg8ei76`
     - Password: `**********`
-    - PSQL Client Connection: `psql --host=cube.synmetrix.org:15432 --username=4x4qg8ei76 --password=********** --dbname=db`
+    - PSQL Client Connection: `psql --host=cube.synmetrix.org --port 15432 --username=4x4qg8ei76 --dbname=db`
     :::
 
 4. Connect using PSQL or MYSQL, or "Download Credentials" for later use.
