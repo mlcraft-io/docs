@@ -10,7 +10,7 @@ sidebar_label: Members
 
 ## Overview
 
-The Members section in your settings allows you to manage the team members who have access to your account. This guide provides step-by-step instructions on how to add new members, as well as how to remove existing members.
+The Members section in your settings allows you to manage the team members who have access to your workspace. This guide provides step-by-step instructions on how to add new members, as well as how to remove existing members.
 
 ## Member Types
 
