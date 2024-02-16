@@ -6,31 +6,31 @@ sidebar_label: Local Development
 sidebar_position: 1
 ---
 
-## Backend
-
 ### Requirements
 
 Before using the backend-side of the project, ensure that you have the following components installed:
 
 - [Docker](https://docs.docker.com/install)
-- [Docker Compose](https://docs.docker.com/compose/install)
-- [Python3](https://www.python.org/downloads/) (with [pip3](https://pip.pypa.io/en/stable/installing/))
+- [Node.js (Version 20.8.1 or above)](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+
+
+## Backend
 
 ### Getting Started
 
 1. Clone the Synmetrix repository:
 
-   ```bash
-   git clone https://github.com/mlcraft-io/mlcraft.git
-   cd mlcraft
-   ```
+  ```bash
+  git clone https://github.com/mlcraft-io/mlcraft.git
+  cd mlcraft
+  ```
 
 2. Run the initialization script:
 
-   ```bash
-   bash init.sh
-   ```
-
+  ```bash
+  bash init.sh
+  ```
 
 ## Frontend
 
@@ -38,10 +38,10 @@ Before using the backend-side of the project, ensure that you have the following
 
 Before using the client-side of the project, ensure that you have the following components installed:
 
-- **NodeJS:** Version 20.8.1 or higher.
 - **Synmetrix Backend:** Ensure the [Synmetrix backend](https://github.com/mlcraft-io/mlcraft/) is properly set up and running.
 
-### Installation
+
+### Getting Started
 
 To install the client-side of the project, follow these steps:
 
