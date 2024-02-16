@@ -6,45 +6,58 @@ sidebar_label: Docker Swarm
 ---
 # Docker Swarm deployment guide
 
-## Run containers locally (staging mode)
+For deploying Synmetrix in a production environment, Docker Swarm is recommended. This guide will assist you in setting up Synmetrix on a Docker Swarm cluster.
 
-```
-# init docker swarm mode
-docker swarm init
+Synmetrix provides a CLI tool for managing services and stacks, which can be utilized for deploying Synmetrix on a Docker Swarm cluster.
 
-# create overlay swarm network
-./scripts/create-overlay-network.sh
+## Start Synmetrix on Docker Swarm
 
-# run local docker registry
-./run-registry.sh
+Go to the Synmetrix project directory and run the following commands:
 
-# build images and push
-DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 python3 cli.py --env stage services push
+### Step 1 - Run Docker Registry
 
-# up the stack
-DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 python3 cli.py --env stage services up synmetrix
+```bash
+./scripts/run-registry.sh
 ```
 
-Then run migrations:
+### Step 2 - Run Synmetrix services
 
+```bash
+DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 ./cli.sh swarm up --init --env stage synmetrix 
 ```
+
+Where `DOMAIN` is the domain name of your Synmetrix instance and `REGISTRY_HOST` is the host of the Docker registry.
+
+### Step 3 - Run migrations
+
+```bash
 ./migrate.sh
 ```
 
+---
+
 ### Destroy stack
 
-```
-python3 cli.py --env stage services destroy synmetrix
+```bash
+./cli.sh swarm destroy synmetrix 
 ```
 
 ### Show logs
 
-```
-python3 cli.py --env stage services logs synmetrix_hasura
+```bash
+./cli.sh swarm logs synmetrix_hasura
 ```
 
 ### Show stack tasks status
 
+```bash
+./cli.sh swarm ps synmetrix
 ```
-python3 cli.py --env stage services ps synmetrix
+
+---
+
+For more information about the CLI tool, run the following command:
+
+```bash
+./cli.sh swarm --help
 ```

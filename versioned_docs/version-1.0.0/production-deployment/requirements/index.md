@@ -4,6 +4,12 @@ title: Requirements
 slug: /production-deployment/requirements/
 sidebar_label: Requirements
 ---
+## Software Requirements
+
+- [Docker](https://docs.docker.com/install)
+- [Node.js (Version 20.8.1 or above)](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+
 ## Hardware Requirements
 
 Synmetrix is intended for installation and use on servers equipped with processors supporting x86-64 architecture and based on operating systems such as Ubuntu Server 18.04 and higher.
