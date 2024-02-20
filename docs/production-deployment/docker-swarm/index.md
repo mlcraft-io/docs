@@ -23,7 +23,7 @@ Go to the Synmetrix project directory and run the following commands:
 ### Step 2 - Run Synmetrix services
 
 ```bash
-DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 ./cli.sh swarm up --init --env stage synmetrix 
+DOMAIN=localhost REGISTRY_HOST=127.0.0.1:50001 ./cli.sh swarm up --init --build --env stage synmetrix 
 ```
 
 Where `DOMAIN` is the domain name of your Synmetrix instance and `REGISTRY_HOST` is the host of the Docker registry.
