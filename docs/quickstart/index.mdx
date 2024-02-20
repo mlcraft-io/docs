@@ -52,7 +52,7 @@ The repository [mlcraft-io/mlcraft/install-manifests](https://github.com/mlcraft
 Execute the following command to start Synmetrix along with a Postgres database for data storage.
 
 ```bash
-$ docker-compose up -d
+$ docker-compose pull stack && docker-compose up -d
 ```
 
 Verify if the containers are operational:
@@ -85,9 +85,16 @@ The installation of all dependencies will take approximately 5-7 minutes. Wait u
 
 2. **Environment Variables**: Set up all necessary environment variables. Synmetrix will function with the default values, but certain features might not perform as anticipated.
 
-3. **Default Seed Data**: The project comes with default seed data. Use the following credentials to log in:
-    - Email: `demo@synmetrix.org`
-    - Password: `demodemo`
+3. **Preloaded Seed Data**: The project is equipped with preloaded seed data. Use the credentials below to sign in:
+    - Email:  `demo@synmetrix.org`
+    - Password:  `demodemo`
+
+    This account is pre-configured with two demo datasources and their respective SQL API access. For SQL operations, you can use the following credentials with any SQL client tool such as DBeaver or TablePlus:
+
+    | Host      | Port  | Database | User                 | Password              |
+    |-----------|-------|----------|----------------------|-----------------------|
+    | localhost | 15432 | db       | demo_pg_user         | demo_pg_pass          |
+    | localhost | 15432 | db       | demo_clickhouse_user | demo_clickhouse_pass  |
 
 :::
 
@@ -99,10 +106,10 @@ Demo: [app.synmetrix.org](https://app.synmetrix.org)
 * Login: `demo@synmetrix.org`
 * Password: `demodemo`
 
-### Demo credentials
+### Demo datasource credentials
 
-| Database type | Host                   | Port | Database | User | Password    | SSL   |
-|---------------|------------------------|------|----------|------|-------------|-------|
-| ClickHouse    | gh-api.clickhouse.tech | 443  | default  | play | no password | true  |
-| PostgreSQL    | demo-db.cube.dev       | 5432 | ecom     | cube | 12345       | false |
+| Database type | Host                        | Port | Database | User | Password    | SSL   |
+| ------------- | --------------------------- | ---- | -------- | ---- | ----------- | ----- |
+| ClickHouse    | gh-api.clickhouse.tech      | 443  | default  | play | no password | true  |
+| PostgreSQL    | demo-db-examples.cube.dev   | 5432 | ecom     | cube | 12345       | false |
 
