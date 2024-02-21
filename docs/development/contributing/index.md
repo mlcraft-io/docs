@@ -3,7 +3,8 @@ id: contributing
 title: Contributing to Synmetrix
 slug: /development/contributing
 sidebar_label: Contributing
-sidebar_position: 2
+sidebar_position: 3
+description: Learn how to contribute to Synmetrix, including code changes, helping other users, documentation updates, bug reports, bug fixes, new feature proposals, and coding standards.
 ---
 
 This guide provides information on how to contribute to Synmetrix, including code changes, helping other users, documentation updates, bug reports, bug fixes, new feature proposals, and coding standards.
@@ -16,7 +17,7 @@ One of the most valuable ways to contribute to Synmetrix is by helping answer us
 
 ## Contributing to Documentation
 
-To propose changes to Synmetrix documentation, edit the documentation source files located in the [docs/](https://github.com/mlcraft-io/mlcraft/tree/master/docs) directory. The README file there explains how to build the documentation locally to test your changes. After making modifications, open a pull request to suggest the changes.
+To propose changes to Synmetrix documentation, edit the documentation source files located in the [docs](https://github.com/mlcraft-io/docs) repo. The README file there explains how to build the documentation locally to test your changes. After making modifications, open a pull request to suggest the changes.
 
 ## Reporting Bugs
 

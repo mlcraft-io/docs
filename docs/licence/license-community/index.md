@@ -8,7 +8,7 @@ slug: /license/license-community
 
 MIT License
 
-Copyright (c) 2023 Synmetrix
+Copyright (c) 2024 SYNMETRIX
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
