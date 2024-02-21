@@ -2,8 +2,11 @@
 id: Requirements
 title: Requirements
 slug: /production-deployment/requirements/
-sidebar_label: Requirements
+type: category
+description: Synmetrix system requirements for software and hardware.
+sidebar_position: 1
 ---
+
 ## Software Requirements
 
 - [Docker](https://docs.docker.com/install)
@@ -28,7 +31,3 @@ Synmetrix is intended for installation and use on servers equipped with processo
  These requirements are minimum and may vary depending on specific use cases and data processing volumes. Scaling the solution may require more powerful servers or distributed systems.
 
 :::
-
-## Source Code
-
-You can access the source code of Synmetrix on [GitHub](https://github.com/mlcraft-io/mlcraft).

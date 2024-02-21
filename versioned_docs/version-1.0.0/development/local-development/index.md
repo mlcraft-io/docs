@@ -4,6 +4,7 @@ title: Local Development
 slug: /development/local-development
 sidebar_label: Local Development
 sidebar_position: 1
+description: Learn how to set up and run the Synmetrix client and backend locally for development purposes.
 ---
 
 ### Requirements
