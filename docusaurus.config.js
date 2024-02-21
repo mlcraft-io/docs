@@ -83,11 +83,11 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Home",
+                label: "Overview",
                 to: "/docs/overview",
               },
               {
-                label: "Quickstart",
+                label: "Quick start",
                 to: "/docs/quickstart",
               },
               {
