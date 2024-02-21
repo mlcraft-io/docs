@@ -70,3 +70,8 @@ Easily create, edit, or delete SQL API credentials via `Settings > SQL API`.
 1. Click the gear icon and select "Edit".
 2. Modify the credentials as needed.
 3. Confirm by clicking "Finish".
+
+
+## Related Articles
+
+- [SQL API Overview](../../core-concepts/sql-interface)

@@ -6,7 +6,7 @@ slug: /user-guide/models
 sidebar_position: 3
 ---
 
-The Models page is a powerful tool for generating and managing models in your project. It allows you to define the structure and relationships of your data, ensuring consistency and integrity. Models are generated using Cube.js, a powerful open-source analytical API platform. You can refer to the [Cube.js documentation](https://cube.dev/docs/schema/getting-started) for more details. Additionally, the page provides features for version controlling your schemas and executing SQL queries on the associated data sources. Here's how you can make the most of this page:
+The Models page is a powerful tool for generating and managing models in your project. It allows you to define the structure and relationships of your data, ensuring consistency and integrity. Models are generated using Cube.js, a powerful open-source analytical API platform. You can refer to the [Data Models](../core-concepts/data-models) for more details. Additionally, the page provides features for version controlling your schemas and executing SQL queries on the associated data sources. Here's how you can make the most of this page:
 
 ## How to Get Started
 
@@ -125,3 +125,7 @@ The Visual Model Editor in Synmetrix, enhanced with YAML support, offers an intu
 5. **Finished**: Your changes are saved.
 
 These steps are a simple way to handle your data models in Synmetrix, whether you're adding, editing, or removing them.
+
+## Related Articles
+
+- [Data Models](../core-concepts/data-models): Learn more about data models and how they're used in Synmetrix.
