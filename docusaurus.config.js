@@ -83,11 +83,11 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Home",
+                label: "Overview",
                 to: "/docs/overview",
               },
               {
-                label: "Quickstart",
+                label: "Quick start",
                 to: "/docs/quickstart",
               },
               {
@@ -109,7 +109,7 @@ const config = {
               },
               {
                 label: "Docker",
-                href: "https://hub.docker.com/u/mlcraft",
+                href: "https://hub.docker.com/u/synmetrix",
               },
             ],
           },

@@ -3,7 +3,7 @@ id: production-deployment
 title: Production Deployment
 slug: /production-deployment
 sidebar_label: Production Deployment
-sidebar_position: 4
+sidebar_position: 6
 ---
 ![Production Deployment](/docs/data/deployment.png)
 

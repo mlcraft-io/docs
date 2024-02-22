@@ -21,66 +21,6 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/quickstart',
   },
   {
-    title: 'Development',
-    ImgPath: require('@site/static/img/development.png').default,
-    description: (
-      <>
-        Learn about development practices and guidelines.
-      </>
-    ),
-    link: '/docs/development',
-  },
-  {
-    title: 'Requirements',
-    ImgPath: require('@site/static/img/requirements.png').default,
-    description: (
-      <>
-        Check out the requirements for your project.
-      </>
-    ),
-    link: '/docs/production-deployment/requirements',
-  },
-  {
-    title: 'Production Deployment',
-    ImgPath: require('@site/static/img/deployment.png').default,
-    description: (
-      <>
-        Explore how to deploy your project in a production environment.
-      </>
-    ),
-    link: '/docs/production-deployment',
-  },
-  {
-    title: 'Architecture and Design',
-    ImgPath: require('@site/static/img/architecture.png').default,
-    description: (
-      <>
-        Understand the architecture and design of our project.
-      </>
-    ),
-    link: '/docs/architecture-and-design',
-  },
-  {
-    title: 'Caching',
-    ImgPath: require('@site/static/img/caching.png').default,
-    description: (
-      <>
-        Learn about caching and its importance in our project.
-      </>
-    ),
-    link: '/docs/caching',
-  },
-  {
-    title: 'SQL Interface',
-    ImgPath: require('@site/static/img/sql.png').default,
-    description: (
-      <>
-        Explore the SQL interface in our project.
-      </>
-    ),
-    link: '/docs/sql-interface',
-  },
-  {
     title: 'User Guide',
     ImgPath: require('@site/static/img/user-guide.png').default,
     description: (
@@ -91,15 +31,15 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/user-guide/',
   },
   {
-    title: 'Testing and Debugging',
-    ImgPath: require('@site/static/img/testing.png').default,
+    title: 'Development',
+    ImgPath: require('@site/static/img/development.png').default,
     description: (
       <>
-        Tips and techniques for testing and debugging your project.
+        Learn about development practices and guidelines.
       </>
     ),
-    link: '/docs/testing-and-debugging',
-  },
+    link: '/docs/development',
+  }
 ];
 
 function Feature({ title, ImgPath, description, link }: FeatureItem) {

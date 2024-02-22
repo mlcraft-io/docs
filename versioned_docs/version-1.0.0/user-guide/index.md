@@ -3,7 +3,7 @@ id: user-guide
 title: User Guide
 slug: /user-guide/
 sidebar_label: User Guide
-sidebar_position: 8
+sidebar_position: 3
 ---
 ![User Guide](/docs/data/guide.png)
 

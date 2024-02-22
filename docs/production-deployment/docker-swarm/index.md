@@ -3,12 +3,23 @@ id: docker-swarm
 title: Docker Swarm deployment guide
 slug: /docker-swarm
 sidebar_label: Docker Swarm
+description: Docker Swarm deployment guide
+sidebar_position: 2
 ---
 # Docker Swarm deployment guide
 
 For deploying Synmetrix in a production environment, Docker Swarm is recommended. This guide will assist you in setting up Synmetrix on a Docker Swarm cluster.
 
 Synmetrix provides a CLI tool for managing services and stacks, which can be utilized for deploying Synmetrix on a Docker Swarm cluster.
+
+### Getting Started
+
+Clone the Synmetrix repository:
+
+```bash
+git clone https://github.com/mlcraft-io/mlcraft.git
+cd mlcraft
+```
 
 ## Start Synmetrix on Docker Swarm
 
