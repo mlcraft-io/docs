@@ -66,6 +66,6 @@ We welcome contributions from the community. If you'd like to get involved in th
 
 ## Contact Us
 
-If you have questions, feedback, or need assistance, don't hesitate to reach out to us. [Contact us](/docs/links-and-contacts/index.md). or by visiting our [GitHub repository](https://github.com/mlcraft-io/mlcraft).
+If you have questions, feedback, or need assistance, don't hesitate to [reach out to us.](/docs/links-and-contacts/index.md)
 
 Synmetrix is meticulously designed to streamline your data management, analysis, and transmission workflows, making it the ultimate tool for all your data needs. We look forward to your involvement and contributions!

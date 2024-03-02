@@ -24,7 +24,7 @@ Our support team is dedicated to assisting you with any questions or problems yo
 * [Twitter](https://twitter.com/trySynmetrix) / Updates and news
 * [Youtube](https://www.youtube.com/channel/UCEPlxaWYrdOaf9IXjD2IRTg) / Video tutorials and demos
 
-## Upcoming Updates and Changes
+### Upcoming Updates and Changes
 
 We are continuously working to improve Synmetrix and provide you with the best possible experience. Please subscribe to our [newsletter](https://docs.synmetrix.org/newsletter) to stay updated on the latest news and upcoming changes.
 
