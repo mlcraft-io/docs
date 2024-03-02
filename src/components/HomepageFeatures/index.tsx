@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
         A comprehensive user guide to help you get started.
       </>
     ),
-    link: '/docs/user-guide/',
+    link: '/docs/user-guide',
   },
   {
     title: 'Development',
